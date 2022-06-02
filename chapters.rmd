@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Each feature dataset is accompanied by an introductory chapter. You can browse the [Atlas](http://lingconlab.ru/dagatlas/features.html) for some examples. 
 
-It can be convenient to write a draft in a google doc in your feature folder, but ultimately the text will have to be formatted in `Rmarkdown`. You can download a template for formatting a chapter [here](https://github.com/sverhees/dagatlas_masterskaya/tree/main/chapter_template) or [here](https://drive.google.com/file/d/17QIK00DNzD5OoKNnlPoICryb9Ochj1X1/view?usp=sharing).
+It can be convenient to write a draft in a google doc in your feature folder, but ultimately the text will have to be formatted in `Rmarkdown`. You can download a template for formatting a chapter [here](https://github.com/LingConLab/TALD_manual/tree/main/chapter_template) or [here](https://drive.google.com/file/d/17QIK00DNzD5OoKNnlPoICryb9Ochj1X1/view?usp=sharing).
 
 # Structure of the text
 
@@ -27,7 +27,7 @@ Below is a list of recommended sections and points to address in the text.
 - Briefly explains what the feature is
 - Gives a general characterization of how it is expressed in East Caucasian 
 - Gives a general characterization of how it is expressed cross-linguistically
-- If applicable: describes how the classification in [TALD](https://timtim1342.github.io/index.html) differs from [WALS](http://wals.info) (e.g. our chapter on the [Standard of Comparison](http://lingconlab.ru/dagatlas/standard_of_comparison.html) shows more sub-types of spatial comparatives)
+- If applicable: describes how the classification in [TALD](http://lingconlab.ru/dagatlas) differs from [WALS](http://wals.info) (e.g. our chapter on the [Standard of Comparison](http://lingconlab.ru/dagatlas/standard_of_comparison.html) shows more sub-types of spatial comparatives)
 - Describes the goal of the text / map in one sentence: "Our goal is to classify the languages of Daghestan according to the type of spatial form used to mark the standard of comparison."
 
 ### 2. Results
@@ -59,4 +59,4 @@ The table will be converted to a `.bib` file for the website automatically.
 
 Avoid spending a lot of time on formatting examples and compiling lists of abbreviations and references in your google doc draft version. Ultimately you will have to format your text in `Rmarkdown`, which will do a lot of the more annoying work for you.
 
-Don't be scared if you are not very experienced with R: all you need to format a chapter is [R](https://www.r-project.org) + [RStudio](https://www.rstudio.com) and our [chapter template](https://github.com/sverhees/dagatlas_masterskaya/blob/main/chapter_template/chapter_template.Rmd).
+Don't be scared if you are not very experienced with R: all you need to format a chapter is [R](https://www.r-project.org) + [RStudio](https://www.rstudio.com) and our [chapter template](https://github.com/LingConLab/TALD_manual/blob/main/chapter_template/chapter_template.Rmd).
