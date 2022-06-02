@@ -1,0 +1,129 @@
+
+---
+title: "How to create a feature dataset"
+output:
+  html_document:
+    fig_cap: yes
+    highlight: tango
+    smooth_scroll: no
+    theme: flatly
+    toc: yes
+    toc_float: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Feature datasets for the Atlas are based on descriptive literature.
+
+To create a dataset you will need the following things:
+
+* Access to our [archive](https://drive.google.com/drive/folders/1qN3TpzX-wTxiX2ZX0ZNJ6SledqzLHE5W)
+* A [dataset template](https://docs.google.com/spreadsheets/d/1ptIOqpr6PMLdMv0QOLShO_bvQMmYz_88q4My7rC9wY0/edit?usp=sharing)
+* Our [library](https://drive.google.com/drive/folders/14RBA31Cj1MsFSiV4E_ZqTLGOhI1dUfMD) of descriptive sources
+* Our [literature database](https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit?usp=sharing) with bibliographical information about the sources in the library
+
+Start by creating a folder for your feature in the archive, and upload your dataset there, even if it is still a work in progress: this makes it easier to discuss any problems or questions you might have.
+
+You can see an example of a completed feature dataset [here](https://docs.google.com/spreadsheets/d/1Emf_uhLgwlLWkqmnCKOJKm2OyyIUt4weq_qqklc_sWo/edit?usp=sharing).
+
+For a quick reference on how to collect data, see the [Step-by-step](file:///home/samira/Git/dagatlas_masterskaya/_site/steps.html) instructions. The instructions below go into more detail.
+
+# List of columns
+
+* **id** - unique number for each row = one observation in your dataset
+* **lang** - language name
+
+* **idiom** - the name of a language variety; descriptive sources provide information on specific dialects or village varieties of languages, and we aim to be as precise as possible about where our information comes from; this also means that if a source says: "in dialect X, the same form is used", you can add this as an observation to your dataset
+* **type** - specifies whether the idiom is a village variety, a dialect spoken in multiple villages, or a standard language; please use our standard names and type classifications
+
+> For most sources in our archive, you can find the name and type of the idiom on the second sheet in the [literature database](https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit?usp=sharing) > **source type and idiom**. Alternatively, you can search for the name and type of a certain idiom in [the East Caucasian villages dataset](https://sverhees.github.io/master_villages/maps_new.html#dialects).
+
+* **genlang_point** - for our maps showing one datapoint per language we need to choose which datapoint (in case we have multiple points per language) is representative and will thus be showed on this map. For this purpose you need to set the appropriate row in this column to *yes* (no more than one per language), and set all other observations for the same language to *no*; see also [Philosophy - Current approach](https://sverhees.github.io/dagatlas_masterskaya/philosophy.html#Current_approach). The full list of languages can be found [here](https://sverhees.github.io/dagatlas_masterskaya/philosophy.html#List_of_languages)
+* **map** - in some cases there are multiple observations for one idiom (e.g. one frequent suffix and more marginal one to express the same meaning). On the map we can show *only one value per datapoint*, so you can use this column to set information you want to see on the map to *yes* and everything else to *no*.
+
+> One value = one row in the dataset. If you have multiple values for one idiom, create two rows for this idiom, each with a unique id. General rule of thumb for the **genlang_point** column is 1 "yes" per language (the Dargwa varieties listed in [Language sample](https://sverhees.github.io/dagatlas_masterskaya/philosophy.html#The_language_sample) each count as a separate language), for **map** it is 1 "yes" per idiom.
+
+* **feature** - the name of your feature / chapter
+* **value1** - the relevant values of a specific parameter (e.g. attested / not attested)
+* **value1_name** - the name of the parameter: the feature [Evidentiality in the tense system](http://lingconlab.ru/dagatlas/evidentiality_tense_map.html), for example, has two parameters: *Evidentiality as a meaning of the perfect* and *Evidentiality in the tense system*. The content of **value1_name** will be used as the title for your map
+
+> Maps are generated based on the **value1** column. If you want to show the distribution of multiple parameters, please name further columns **value2**, **value3**, etc., and accordingly: **value1_name**, **value2_name**. 
+
+* **source** - reference to the source you consulted (see [Literature references](#literature-references) below)
+* **page** - relevant page in the source
+* **comment** - in this column you can "pour out your soul" in the words of G.A. Moroz: add any kind of thought on an observation or the source it appears in. Keep in mind, however, that anything you write here will be visible to users of the Atlas. So please write your comments in English, and make them clear and informative
+* **contributor** - your name in English, so we know how to properly credit your work
+
+* **form** - what the phoneme / morpheme / construction / lexeme looks like in [Caucasiologist transcription](https://sverhees.github.io/dagatlas_masterskaya/trans.html)
+* **example** - example of how the form is used (if applicable) in [Caucasiologist transcription](https://sverhees.github.io/dagatlas_masterskaya/trans.html) with morpheme boundaries
+* **translation_as_in_source** - original translation of the example
+* **translation** - optional: your own English translation of the example in case the source was in Russian or you dislike the original translation for some reason
+* **gloss** - glosses for the example. Please follow the [Leipzig glossing rules](https://www.eva.mpg.de/lingua/pdf/Glossing-Rules.pdf) where possible. This includes unifying glosses from the original sources if necessary. Format the non-lexical glosses in CAPS.
+* **example_source** - reference to the source of the example
+* **example_page** - page reference for the example
+* **example_comment** - any kind of comment you would like to add regarding the example
+
+* **date** - the date on which you submitted your table; edits of the table after its first publication on the website will receive a new date stamp accordingly
+
+# Literature references
+
+When you add a reference to your dataset, check if it is already listed in the [literature database](https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit?usp=sharing). If yes, copy the **bibtexkey** of the reference from the database to the **source** column in your table.
+
+> A **bibtexkey** is a unique identifier for a source which allows us to easily cite sources across the Atlas.
+
+(You can find our [library](https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit?usp=sharing) of descriptive sources here.)
+
+In case you used multiple sources for one row / observation, separate the keys with a semicolon (**;**), and do the same with the page numbers in the adjacent column.
+
+If you refer to multiple page ranges from one source, separate them with a comma. 
+
+If the entire source was relevant, for example because it was a paper devoted to your topic, or because you read the whole grammar and the feature is not mentioned anywhere, indicate NA in the page column.
+
+|source                       |page              |
+|-----------------------------|------------------|
+|khalilova2009; khalilova2011 |221, 234–239; NA  |
+
+In the example above, pages 221 and 234-239 from `khalilova2009` have relevant information about the feature, while the paper `khalilova2011` was consulted/is relevant in its entirety.
+
+## Adding new literature
+
+If you use a source which is not in our database yet, you will have to add it by submitting a [form](https://docs.google.com/forms/d/e/1FAIpQLSfekbCiSi5TVtJDAWcAzIajkwYyoR8WjRJ1tjkt0QS6kdkIEA/viewform?usp=sf_link) with the necessary information.
+
+> Russian resources are listed in Cyrillic script with a translation in English.
+
+The **bibtexkey** for a source is constructed as follows:
+
+`khalilova2009`  
+surname (Latin script, lower case letters) + year
+
+If there are two authors, use both surnames, cf. Chumakina & Corbett (2008) becomes `chumakinacorbett2008`.
+For sources with more than two authors, write down only the surname of the first author followed by *et al*, e.g. `alekseevetal2008`.
+
+In case a different resource by the same author and from the same year is already present in the [literature database](https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit?usp=sharing), add a keyword *following* the year, e.g. `bokarev1949` / `bokarev1949avar`.
+
+**For unpublished sources** use the surname followed by the word draft, and the year in which the manuscript was produced or when it was expected to be published, for example `creisselsdraft2020'.
+
+> The **'author'** field should be filled as follows: last name, name and (if present) the first letter of the patronymic or second name, for example: *Абдуллаев, Сайгид Н*. If the source has more than one author use *и* (in Russian) or *and* (in English): *Абдуллаева, Айшат З. и Гаджиахмедов, Нурмагомед Э. и Кадыраджиев, Калсын С.* etc. If the source does not specify the full names, try to find them on the Internet rather than using initials.
+
+Don't forget to upload a copy of the source to the appropriate folder in the  [library](https://drive.google.com/drive/folders/14RBA31Cj1MsFSiV4E_ZqTLGOhI1dUfMD?usp=sharing) using the **bibtexkey** as filename.
+
+# Transcription
+
+Some general principles for transcription:
+
+* we mostly follow IPA conventions but with a few notable exceptions: 
+  * ts = c, ʃ = š, tʃ = č,  tɬ, tɬ' = ƛ , ƛ', dʒ = ǯ ,  ʒ = ž
+  * nasalization is indicated with a tilde (~) above the vowel: aⁿ >	ã
+  * except diphtongs, because they would require double tildes, which looks pretty afwul: ũ̃̃o (in the source code these are two vowels with a tilde above it side-by-side)
+  * gemination as well as long vowels are indicated with a lengthmark ː (triangles, not dots): чч > čː for consonants, ō > oː for vowels
+  
+* [here](add proper link) is a table with all of the phonemes attested in the languages of our sample, transcribed in IPA (column **phoneme**); how to transcribe them for the atlas (column **TALD**), and how they are represented in different idioms and sources (all other columns). If you click on a column, you can view the bibtexkey of the source (in addition to the language and idiom). This also means that if you have the bibtexkey of a grammar, you can quickly find the corresponding phoneme and transcription.
+
+
+# Help
+
+For any general questions about data collection or the library, you can always contact Chiara.
+
+If you have a more specific question about your feature, please also contact Chiara, and she will connect you with an expert consultant for your feature.

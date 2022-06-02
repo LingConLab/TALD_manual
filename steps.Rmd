@@ -1,0 +1,63 @@
+---
+title: "Step by step instruction"
+output:
+  html_document:
+    fig_cap: yes
+    highlight: tango
+    smooth_scroll: no
+    theme: flatly
+    toc: yes
+    toc_float: yes
+---
+
+On this page you can find a brief step-by-step instruction on how to collect data according to the TALD methodology.
+
+## Step 1 - Create a folder
+
+Make a folder for your feature in [the archive](https://drive.google.com/drive/u/2/folders/1Rrm0NOH2E7dGMC97TdCFhjg7Y_FrAU3i) and copy [the feature template](https://docs.google.com/spreadsheets/d/1ptIOqpr6PMLdMv0QOLShO_bvQMmYz_88q4My7rC9wY0/edit#gid=0) in it.
+
+## Step 2 - Add data
+
+Collect information for each language in the feature template. Fill all required columns (see [Feature datasets > List of columns](https://sverhees.github.io/dagatlas_masterskaya/datasets.html#list-of-columns) for an explanation of the column names).
+ 
+* We collect data from descriptive literature, which you can find in [our library](https://drive.google.com/drive/u/2/folders/14RBA31Cj1MsFSiV4E_ZqTLGOhI1dUfMD).
+  
+  + In our [literature database](https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit#gid=1077173260) you can find bibliographical information about the source, as well as information on which idioms are represented in the sources (on the sheet **source type and idiom**, columns **idiom** and **type**).
+<br>
+<br>
+      
+* If you want to use a source that is not in the library yet:
+
+  + Submit information about the source via [this form](https://docs.google.com/forms/d/e/1FAIpQLSfekbCiSi5TVtJDAWcAzIajkwYyoR8WjRJ1tjkt0QS6kdkIEA/viewform?usp=sf_link). Each source should be assigned a **bibtexkey** -- a unique identifier that allows us to easily cite sources across the Atlas. See [Feature datasets > Literature references > Adding new literature]() on how to construct a key. Be sure to check whether the key is already taken.
+  
+  + Upload the source to the appropriate folder in [the library](https://drive.google.com/drive/u/2/folders/14RBA31Cj1MsFSiV4E_ZqTLGOhI1dUfMD). Use the **bibtexkey** as a filename.
+      
+## Step 3 - Write a chapter
+
+Write an introductory chapter about your feature in `rmarkdown` using our [chapter template](https://github.com/sverhees/dagatlas_masterskaya/blob/main/chapter_template/chapter_template.Rmd). See [Writing a chapter](https://sverhees.github.io/dagatlas_masterskaya/chapters.html) for more detailed guidelines.
+
+## Step 4 - Check your files
+
+By the end of the work, your folder in [the archive](https://drive.google.com/drive/u/2/folders/1Rrm0NOH2E7dGMC97TdCFhjg7Y_FrAU3i) should contain the following things:
+
+* your feature table, with the name of your feature as filename
+* your chapter text (in .rmd format; optionally a draft version in doc format)
+* a table with references used in your text, filename: YOURFEATURE_bib
+* a copy of the [TALD author agreement](https://docs.google.com/document/d/1tw-ty-pZglBhW8Ma3PfSit1migXc0vNX1AZE1BCyNio/edit?usp=sharing), filled out and signed
+* **make sure the filenames of your feature table, text, and references are the same, e.g. evidentialtytense.xlsx (data), evidentialitytense.rmd (text), evidentialitytense_bib.xlsx (chapter references)** 
+
+> Don't forget to add the date on which you submit your finished work to us in the **date** column of your feature table!
+
+## Step 5 - Changes after publication
+
+What to do if you want to make changes to your data or chapter after it has been published?
+
+* Create an issue on the [TALD Github](https://github.com/LingConLab/TALD/issues) where you outline the proposed changes.
+* Please mention the title of your chapter in the subject line, and indicate whether you are the author (other users can also propose changes, and we might not be able to recognize you from your Github username).
+* You will be contacted by an editor to discuss how to proceed. The process will differ depending on what and how much you want to change.
+
+* You can also contact the Atlas (cauatlas@gmail.com) or your responsible editor directly. However, we prefer to deal with any updates via Github, because it is more transparent.
+
+
+
+
