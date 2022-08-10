@@ -11,7 +11,7 @@
 
 
 
-<title>How to write a chapter</title>
+<title>Step by step instruction</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,15 +23,6 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-      </style>
 
 
 
@@ -369,59 +360,58 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">How to write a chapter</h1>
+<h1 class="title toc-ignore">Step by step instruction</h1>
 
 </div>
 
 
-<p>Each feature dataset is accompanied by an introductory chapter. You can browse the <a href="http://lingconlab.ru/dagatlas/features.html">Atlas</a> for some examples.</p>
-<p>It can be convenient to write a draft in a google doc in your feature folder, but ultimately the text will have to be formatted in <code>Rmarkdown</code>. You can download a template for formatting a chapter <a href="https://github.com/LingConLab/TALD_manual/tree/main/chapter_template">here</a> or <a href="https://drive.google.com/file/d/17QIK00DNzD5OoKNnlPoICryb9Ochj1X1/view?usp=sharing">here</a>.</p>
-<div id="structure-of-the-text" class="section level1">
-<h1>Structure of the text</h1>
-<p>Below is a list of recommended sections and points to address in the text.</p>
-<div id="introduction" class="section level3">
-<h3>1. Introduction</h3>
+<p>On this page you can find a brief step-by-step instruction on how to collect data according to the TALD methodology.</p>
+<div id="step-1---create-a-folder" class="section level2">
+<h2>Step 1 - Create a folder</h2>
+<p>Make a folder for your feature in <a href="https://drive.google.com/drive/u/2/folders/1Rrm0NOH2E7dGMC97TdCFhjg7Y_FrAU3i">the archive</a> and copy <a href="https://docs.google.com/spreadsheets/d/1ptIOqpr6PMLdMv0QOLShO_bvQMmYz_88q4My7rC9wY0/edit#gid=0">the feature template</a> in it.</p>
+</div>
+<div id="step-2---add-data" class="section level2">
+<h2>Step 2 - Add data</h2>
+<p>Collect information for each language in the feature template. Fill all required columns (see <a href="https://sverhees.github.io/dagatlas_masterskaya/datasets.html#list-of-columns">Feature datasets &gt; List of columns</a> for an explanation of the column names).</p>
 <ul>
-<li>Briefly explains what the feature is</li>
-<li>Gives a general characterization of how it is expressed in East Caucasian</li>
-<li>Gives a general characterization of how it is expressed cross-linguistically</li>
-<li>If applicable: describes how the classification in <a href="http://lingconlab.ru/dagatlas">TALD</a> differs from <a href="http://wals.info">WALS</a> (e.g. our chapter on the <a href="http://lingconlab.ru/dagatlas/standard_of_comparison.html">Standard of Comparison</a> shows more sub-types of spatial comparatives)</li>
-<li>Describes the goal of the text / map in one sentence: “Our goal is to classify the languages of Daghestan according to the type of spatial form used to mark the standard of comparison.”</li>
+<li><p>We collect data from descriptive literature, which you can find in <a href="https://drive.google.com/drive/u/2/folders/14RBA31Cj1MsFSiV4E_ZqTLGOhI1dUfMD">our library</a>.</p>
+<ul>
+<li>In our <a href="https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit#gid=1077173260">literature database</a> you can find bibliographical information about the source, as well as information on which idioms are represented in the sources (on the sheet <strong>source type and idiom</strong>, columns <strong>idiom</strong> and <strong>type</strong>). <br> <br></li>
+</ul></li>
+<li><p>If you want to use a source that is not in the library yet:</p>
+<ul>
+<li><p>Submit information about the source via <a href="https://docs.google.com/forms/d/e/1FAIpQLSfekbCiSi5TVtJDAWcAzIajkwYyoR8WjRJ1tjkt0QS6kdkIEA/viewform?usp=sf_link">this form</a>. Each source should be assigned a <strong>bibtexkey</strong> – a unique identifier that allows us to easily cite sources across the Atlas. See <a href="">Feature datasets &gt; Literature references &gt; Adding new literature</a> on how to construct a key. Be sure to check whether the key is already taken.</p></li>
+<li><p>Upload the source to the appropriate folder in <a href="https://drive.google.com/drive/u/2/folders/14RBA31Cj1MsFSiV4E_ZqTLGOhI1dUfMD">the library</a>. Use the <strong>bibtexkey</strong> as a filename.</p></li>
+</ul></li>
 </ul>
 </div>
-<div id="results" class="section level3">
-<h3>2. Results</h3>
+<div id="step-3---write-a-chapter" class="section level2">
+<h2>Step 3 - Write a chapter</h2>
+<p>Write an introductory chapter about your feature in <code>rmarkdown</code> using our <a href="https://github.com/sverhees/dagatlas_masterskaya/blob/main/chapter_template/chapter_template.Rmd">chapter template</a>. See <a href="https://sverhees.github.io/dagatlas_masterskaya/chapters.html">Writing a chapter</a> for more detailed guidelines.</p>
+</div>
+<div id="step-4---check-your-files" class="section level2">
+<h2>Step 4 - Check your files</h2>
+<p>By the end of the work, your folder in <a href="https://drive.google.com/drive/u/2/folders/1Rrm0NOH2E7dGMC97TdCFhjg7Y_FrAU3i">the archive</a> should contain the following things:</p>
 <ul>
-<li>Summarizes the different types/values you discovered; types identified in the text should correspond to values shown on the map. If you want to fuse multiple types into one category, be sure to explain this decision in the text.</li>
+<li>your feature table, with the name of your feature as filename</li>
+<li>your chapter text (in .rmd format; optionally a draft version in doc format)</li>
+<li>a table with references used in your text, filename: YOURFEATURE_bib</li>
+<li>a copy of the <a href="https://docs.google.com/document/d/1tw-ty-pZglBhW8Ma3PfSit1migXc0vNX1AZE1BCyNio/edit?usp=sharing">TALD author agreement</a>, filled out and signed</li>
+<li><strong>make sure the filenames of your feature table, text, and references are the same, e.g. evidentialtytense.xlsx (data), evidentialitytense.rmd (text), evidentialitytense_bib.xlsx (chapter references)</strong></li>
 </ul>
 <blockquote>
-<p><strong>A hypothetical example:</strong><br />
-<a href="http://lingconlab.ru/dagatlas/standard_of_comparison.html">Comparative constructions</a> are usually based on spatial case forms, which consist of a localization and a directionality. Let’s say Chiara only cares about directionality, because differences in localization occur more rarely and do not show an interesting distribution. She can choose to create general categories based on directionality (e.g. essive and elative), and mention in her text that elative includes both super-elative and cont-elative forms.</p>
+<p>Don’t forget to add the date on which you submit your finished work to us in the <strong>date</strong> column of your feature table!</p>
 </blockquote>
+</div>
+<div id="step-5---changes-after-publication" class="section level2">
+<h2>Step 5 - Changes after publication</h2>
+<p>What to do if you want to make changes to your data or chapter after it has been published?</p>
 <ul>
-<li>Provide examples</li>
-<li>Identify which types are more or less common</li>
+<li>Create an issue on the <a href="https://github.com/LingConLab/TALD/issues">TALD Github</a> where you outline the proposed changes.</li>
+<li>Please mention the title of your chapter in the subject line, and indicate whether you are the author (other users can also propose changes, and we might not be able to recognize you from your Github username).</li>
+<li><p>You will be contacted by an editor to discuss how to proceed. The process will differ depending on what and how much you want to change.</p></li>
+<li><p>You can also contact the Atlas (<a href="mailto:cauatlas@gmail.com" class="email">cauatlas@gmail.com</a>) or your responsible editor directly. However, we prefer to deal with any updates via Github, because it is more transparent.</p></li>
 </ul>
-</div>
-<div id="distribution" class="section level3">
-<h3>3. Distribution</h3>
-<ul>
-<li>Does the distribution of different types show a genealogical and / or areal signal?</li>
-</ul>
-</div>
-</div>
-<div id="literature-references" class="section level1">
-<h1>Literature references</h1>
-<p>For the chapter, you will have to compile your own list of references using this <a href="https://drive.google.com/file/d/17QIK00DNzD5OoKNnlPoICryb9Ochj1X1/view?usp=sharing">table template</a>.</p>
-<p>The references should be in <a href="https://en.wikipedia.org/wiki/BibTeX">bibtex</a> format. You can find a list of entry types and their arguments <a href="https://www.bibtex.com/e/entry-types/">here</a>. Our <a href="https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit?usp=sharing">literature database</a> is an example of a table of references in <a href="https://en.wikipedia.org/wiki/BibTeX">bibtex</a> format.</p>
-<p>In case you cite a source from our library in your chapter, all you have to do is copy the information from the <a href="https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit?usp=sharing">literature database</a> to your own table.</p>
-<p>When you are done, upload the table with references to your feature folder using the following filenaming convention: name of your feature _references, e.g. <strong>standardofcomparison_references</strong>.</p>
-<p>The table will be converted to a <code>.bib</code> file for the website automatically.</p>
-</div>
-<div id="pro-tip" class="section level1">
-<h1>Pro-tip</h1>
-<p>Avoid spending a lot of time on formatting examples and compiling lists of abbreviations and references in your google doc draft version. Ultimately you will have to format your text in <code>Rmarkdown</code>, which will do a lot of the more annoying work for you.</p>
-<p>Don’t be scared if you are not very experienced with R: all you need to format a chapter is <a href="https://www.r-project.org">R</a> + <a href="https://www.rstudio.com">RStudio</a> and our <a href="https://github.com/LingConLab/TALD_manual/blob/main/chapter_template/chapter_template.Rmd">chapter template</a>.</p>
 </div>
 
 
@@ -474,7 +464,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
