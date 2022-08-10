@@ -1,6 +1,6 @@
 ---
 output: html_document
-bibliography: chapter_template.bib
+#bibliography: chapter_template.bib
 ---
 
 ```{r, include=FALSE}
@@ -8,6 +8,7 @@ knitr::opts_chunk$set(echo = FALSE)
 library(lingglosses)
 library(tidyverse)
 library(bib2df)
+library(lingtypology)
 
 # you need to provide the real name, not `chapter_template`
 file_name <- "chapter_template_bib.tsv"
@@ -56,9 +57,11 @@ In addition to the three mandatory sections, you can add as many chapter-specifi
 
 ### Tables
 
-Use [tables generator](https://www.tablesgenerator.com/markdown_tables) to easily create tables in markdown syntax. You can copy a table directly from word. Look at [Table 1](#m1)!
+Use [tables generator](https://www.tablesgenerator.com/markdown_tables) to easily create tables in markdown syntax. You can copy a table directly from word.
 
-#### Table 1. A table {#m1}
+Each table should have a reference in the text, for example look at [Table 1](#m1)! The header of each table should be styled as follows (`#m1` is the key of the table, it is used to refer to the table in the text, the number in the key changes for each table):
+
+#### **Table 1.** A table {#m1 -}
 
 |            | meaning 1 | meaning 2 |
 |------------|-----------|-----------|
@@ -67,7 +70,7 @@ Use [tables generator](https://www.tablesgenerator.com/markdown_tables) to easil
 
 You can also generate HTML if you have a more complex table (like [Table 2](#m2)) with formatting and colors.
 
-#### Table 2. A fancier table {#m2}
+#### **Table 2.** A fancier table {#m2 -}
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -104,19 +107,52 @@ You can also generate HTML if you have a more complex table (like [Table 2](#m2)
 </tbody>
 </table>
 
+### Maps and picture
+
+Each map or picture should have a reference in the text, for example look at [Figure 1](#f1)! If you use a map or picture, use the following header style:
+
+#### **Figure 1.** Map of some languages {#f2 -}
+
+```{r}
+map.feature(c("Rutul", "Ingush", "Udi"))
+```
+
 
 ### Examples
 
 For examples we use the [lingglosses](https://agricolamz.github.io/lingglosses/) package.
 
 Format your example as shown below, but add `, echo=FALSE` following the `r` in the code-block in the `.Rmd` file, so that only your example shows and not your source code.
-              
+
+Each example should have a reference in the text, for example look at (@one)!
+
+(@one) Zilo Andi, East Caucasian [@somekey: 12]
 ```{r}
-gloss_example(transliteration = "bur-e-**ri** c'in-ne-sːu",
-              glosses = "fly-NPST-**INF** know-HAB-NEG",
-              free_translation = "I cannot fly. (Zilo Andi, East Caucasian)",
+gloss_example(transliteration = "bur-**e-ri** c'in-ne-sːu",
+              glosses = "fly-**NPST-INF** know-HAB-NEG",
+              free_translation = "I cannot fly.",
               comment = "(lit. do not know how to)")
 ```
+
+If you need subexamples use tabulation before the letter:
+
+(@two) Zilo Andi, East Caucasian [@somekey: 12]
+    a.
+```{r}
+gloss_example(transliteration = "bur-**e-ri** c'in-ne-sːu",
+              glosses = "fly-**NPST-INF** know-HAB-NEG",
+              free_translation = "I cannot fly.",
+              comment = "(lit. do not know how to)")
+```
+    b.
+```{r}
+gloss_example(transliteration = "bur-**e-ri** c'in-ne-sːu",
+              glosses = "fly-**NPST-INF** know-HAB-NEG",
+              free_translation = "I cannot fly.",
+              comment = "(lit. do not know how to)")
+```
+
+Note that, if you want to bold several words, then `**` should be around each of them: `transliteration = "**bur-e-ri** **c'in-ne-sːu**"`
 
 You can also use it to cite glosses in text: `r gloss_example("word=GLOSS", "meaning=GL", intext = TRUE)`
 
