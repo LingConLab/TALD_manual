@@ -32,7 +32,7 @@ On this page you can find a brief step-by-step instruction on how to collect dat
   
   + Upload the source to the appropriate folder in [the library](https://drive.google.com/drive/u/2/folders/14RBA31Cj1MsFSiV4E_ZqTLGOhI1dUfMD). Use the **bibtexkey** as a filename.
 
-See [Datasests](datasest.html) for more detailed guidelines.
+See [Datasests](datasets.html) for more detailed guidelines.
  
 -----------
 
