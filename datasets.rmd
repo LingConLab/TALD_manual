@@ -20,7 +20,7 @@ Feature datasets for the Atlas are based on descriptive literature.
 To create a dataset you will need the following things:
 
 * Access to our [archive](https://drive.google.com/drive/folders/1qN3TpzX-wTxiX2ZX0ZNJ6SledqzLHE5W)
-* A [dataset template](https://docs.google.com/spreadsheets/d/1ptIOqpr6PMLdMv0QOLShO_bvQMmYz_88q4My7rC9wY0/edit?usp=sharing)
+* A [dataset template](https://docs.google.com/spreadsheets/d/1HCoEBiz8A2Vd9LUApRLtMANpnsUJN-k6EaXrBYfN0IU/edit#gid=0)
 * Our [library](https://drive.google.com/drive/folders/14RBA31Cj1MsFSiV4E_ZqTLGOhI1dUfMD) of descriptive sources
 * Our [literature database](https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit?usp=sharing) with bibliographical information about the sources in the library
 
@@ -32,7 +32,13 @@ For a quick reference on how to collect data, see the [Step-by-step](https://lin
 
 # List of columns
 
+Some of the columns are **required** (without them, there may be problems with rendering maps and chapters) and some _**are not**_. 
+
+Note: if you use an apostrophe (for example, in the name of a village (`Tad-Magitl'`) or in transcription), use [U+0027](https://en.wikipedia.org/wiki/%27_(disambiguation)) `'`. If you are working in Excel, when loading the table to the drive, make sure that the apostrophes remain correct.
+
 * **id** - unique number for each row = one observation in your dataset
+* _**family**_ - language family
+* _**group**_ - language branch/group
 * **lang** - language name
 
 * **idiom** - the name of a language variety; descriptive sources provide information on specific dialects or village varieties of languages, and we aim to be as precise as possible about where our information comes from; this also means that if a source says: "in dialect X, the same form is used", you can add this as an observation to your dataset
@@ -47,23 +53,24 @@ For a quick reference on how to collect data, see the [Step-by-step](https://lin
 
 * **feature** - the name of your feature / chapter
 * **value1** - the relevant values of a specific parameter (e.g. attested / not attested)
-* **value1_name** - the name of the parameter: the feature [Evidentiality in the tense system](http://lingconlab.ru/dagatlas/evidentiality_tense_map.html), for example, has two parameters: *Evidentiality as a meaning of the perfect* and *Evidentiality in the tense system*. The content of **value1_name** will be used as the title for your map
+* **value1_name** - the name of the parameter: the feature [Evidentiality in the tense system](http://lingconlab.ru/dagatlas/evidentiality_tense_map.html), for example, has two parameters: *Evidentiality as a meaning of the perfect* and *Evidentiality in the tense system*. The name of each parameter should be capitalized. The content of **value1_name** will be used as the title for your map
 
-> Maps are generated based on the **value1** column. If you want to show the distribution of multiple parameters, please name further columns **value2**, **value3**, etc., and accordingly: **value1_name**, **value2_name**. 
+> Maps are generated based on the **value1** column. If you want to show the distribution of multiple parameters, please name further columns **value2**, **value3**, etc., and accordingly: **value1_name**, **value2_name**.
 
 * **source** - reference to the source you consulted (see [Literature references](#literature-references) below)
 * **page** - relevant page in the source
-* **comment** - in this column you can "pour out your soul" in the words of G.A. Moroz: add any kind of thought on an observation or the source it appears in. Keep in mind, however, that anything you write here will be visible to users of the Atlas. So please write your comments in English, and make them clear and informative
+* _**comment**_ - in this column you can "pour out your soul" in the words of G.A. Moroz: add any kind of thought on an observation or the source it appears in. Keep in mind, however, that anything you write here will be visible to users of the Atlas. So please write your comments in English, and make them clear and informative
 * **contributor** - your name in English, so we know how to properly credit your work
 
-* **form** - what the phoneme / morpheme / construction / lexeme looks like in [Caucasiologist transcription](#transcription)
-* **example** - example of how the form is used (if applicable) in [Caucasiologist transcription](#transcription) with morpheme boundaries
-* **translation_as_in_source** - original translation of the example
-* **translation** - optional: your own English translation of the example in case the source was in Russian or you dislike the original translation for some reason
-* **gloss** - glosses for the example. Please follow the [Leipzig glossing rules](https://www.eva.mpg.de/lingua/pdf/Glossing-Rules.pdf) where possible. This includes unifying glosses from the original sources if necessary. Format the non-lexical glosses in CAPS.
-* **example_source** - reference to the source of the example
-* **example_page** - page reference for the example
-* **example_comment** - any kind of comment you would like to add regarding the example
+* _**form**_ - what the phoneme / morpheme / construction / lexeme looks like in [Caucasiologist transcription](#transcription)
+* _**example_as_in_source**_ - original transcription of the example
+* _**example**_ - example of how the form is used (if applicable) in [Caucasiologist transcription](#transcription) with morpheme boundaries
+* _**translation_as_in_source**_ - original translation of the example
+* _**translation**_ - optional: your own English translation of the example in case the source was in Russian or you dislike the original translation for some reason
+* _**gloss**_ - glosses for the example. Please follow the [Leipzig glossing rules](https://www.eva.mpg.de/lingua/pdf/Glossing-Rules.pdf) where possible. This includes unifying glosses from the original sources if necessary. Format the non-lexical glosses in CAPS.
+* _**example_source**_ - reference to the source of the example
+* _**example_page**_ - page reference for the example
+* _**example_comment**_ - any kind of comment you would like to add regarding the example
 
 * **date** - the date on which you submitted your table; edits of the table after its first publication on the website will receive a new date stamp accordingly
 
@@ -75,7 +82,7 @@ When you add a reference to your dataset, check if it is already listed in the [
 
 (You can find our [library](https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit?usp=sharing) of descriptive sources here.)
 
-In case you used multiple sources for one row / observation, separate the keys with a semicolon (**;**), and do the same with the page numbers in the adjacent column.
+In case you used multiple sources for one row / observation, separate the keys with a semicolon **and space** (**; **), and do the same with the page numbers in the adjacent column.
 
 If you refer to multiple page ranges from one source, separate them with a comma. 
 
@@ -86,6 +93,8 @@ If the entire source was relevant, for example because it was a paper devoted to
 |khalilova2009; khalilova2011 |221, 234–239; NA  |
 
 In the example above, pages 221 and 234-239 from `khalilova2009` have relevant information about the feature, while the paper `khalilova2011` was consulted/is relevant in its entirety.
+
+If the source of the information is a personal conversation, it is necessary to indicate the name of the source with a note `p.c.` for example `Santa Claus, p.c.`.
 
 ## Adding new literature
 

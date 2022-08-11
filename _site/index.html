@@ -20,6 +20,8 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 
 
@@ -258,19 +260,30 @@ $(document).ready(function () {
   <a href="index.html">Home</a>
 </li>
 <li>
-  <a href="philosophy.html">Philosophy</a>
+  <a href="steps.html">How to start</a>
 </li>
-<li>
-  <a href="datasets.html">Datasets</a>
-</li>
-<li>
-  <a href="chapters.html">Chapters</a>
-</li>
-<li>
-  <a href="maps.html">Maps</a>
-</li>
-<li>
-  <a href="steps.html">Step-by-step</a>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-info"></span>
+     
+    More
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="philosophy.html">Philosophy</a>
+    </li>
+    <li>
+      <a href="datasets.html">Datasets</a>
+    </li>
+    <li>
+      <a href="chapters.html">Chapters</a>
+    </li>
+    <li>
+      <a href="maps.html">Maps</a>
+    </li>
+  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -289,7 +302,7 @@ $(document).ready(function () {
 </div>
 
 
-<p>Updated: 2022-08-10</p>
+<p>Updated: 2022-08-11</p>
 <p>Welcome to the Contributor Manual for the <a href="http://lingconlab.ru/dagatlas/">Typological Atlas of the Languages of Daghestan (TALD)</a>!</p>
 <p>Here you will find basic instructions for collecting a <a href="https://lingconlab.github.io/TALD_manual/datasets.html">feature dataset</a> for the Atlas, writing and formatting an accompanying <a href="https://lingconlab.github.io/TALD_manual/chapters.html">chapter</a>, and creating <a href="https://lingconlab.github.io/TALD_manual/maps.html">map visualizations</a>.</p>
 <p>The manual also introduces the underlying <a href="https://lingconlab.github.io/TALD_manual/philosophy.html">philosophy</a> of the project and the structure of the data.</p>

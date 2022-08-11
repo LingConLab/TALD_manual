@@ -59,12 +59,12 @@ In addition to the three mandatory sections, you can add as many chapter-specifi
 
 Use [tables generator](https://www.tablesgenerator.com/markdown_tables) to easily create tables in markdown syntax. You can copy a table directly from word.
 
-Each table should have a reference in the text, for example look at [Table 1](#m1)! The header of each table should be styled as follows (`#m1` is the key of the table, it is used to refer to the table in the text, the number in the key changes for each table):
+Each table should have a reference in the text, for example look at [Table 1](#m1)! The header of each table should be styled as follows (`#m1` is the key of the table, it is used to refer to the table in the text, the number in the key changes for each table). If you need to align the text in a column, use `:`
 
 #### **Table 1.** A table {#m1 -}
 
-|            | meaning 1 | meaning 2 |
-|------------|-----------|-----------|
+|  language  | meaning 1 | meaning 2 |
+|------------|----------:|:---------:|
 | lanuage 1  | -suffix   | -clitic   |
 | language 2 | -clitic   | -suffix   |
 
@@ -152,7 +152,7 @@ gloss_example(transliteration = "bur-**e-ri** c'in-ne-sːu",
               comment = "(lit. do not know how to)")
 ```
 
-Note that, if you want to bold several words, then `**` should be around each of them: `transliteration = "**bur-e-ri** **c'in-ne-sːu**"`
+Note that, if you want to bold several words in your example, then `**` should be around each of them: `transliteration = "**bur-e-ri** **c'in-ne-sːu**"`
 
 You can also use it to cite glosses in text: `r gloss_example("word=GLOSS", "meaning=GL", intext = TRUE)`
 

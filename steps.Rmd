@@ -14,15 +14,15 @@ On this page you can find a brief step-by-step instruction on how to collect dat
 
 ## Step 1 - Create a folder
 
-Make a folder for your feature in [the archive](https://drive.google.com/drive/u/2/folders/1Rrm0NOH2E7dGMC97TdCFhjg7Y_FrAU3i) and copy [the feature template](https://docs.google.com/spreadsheets/d/1ptIOqpr6PMLdMv0QOLShO_bvQMmYz_88q4My7rC9wY0/edit#gid=0) in it.
+Make a folder for your feature in [the archive](https://drive.google.com/drive/u/2/folders/1Rrm0NOH2E7dGMC97TdCFhjg7Y_FrAU3i) and copy [the feature template](https://docs.google.com/spreadsheets/d/1HCoEBiz8A2Vd9LUApRLtMANpnsUJN-k6EaXrBYfN0IU/edit#gid=0) in it.
 
 ## Step 2 - Add data
 
-Collect information for each language in the feature template. Fill all required columns (see [Feature datasets > List of columns](https://sverhees.github.io/dagatlas_masterskaya/datasets.html#list-of-columns) for an explanation of the column names).
+Collect information for each language in [the feature template](https://docs.google.com/spreadsheets/d/1HCoEBiz8A2Vd9LUApRLtMANpnsUJN-k6EaXrBYfN0IU/edit#gid=0). Fill all required columns (see [Feature datasets > List of columns](https://sverhees.github.io/dagatlas_masterskaya/datasets.html#list-of-columns) for an explanation of the column names).
  
 * We collect data from descriptive literature, which you can find in [our library](https://drive.google.com/drive/u/2/folders/14RBA31Cj1MsFSiV4E_ZqTLGOhI1dUfMD).
   
-  + In our [literature database](https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit#gid=1077173260) you can find bibliographical information about the source, as well as information on which idioms are represented in the sources (on the sheet **source type and idiom**, columns **idiom** and **type**).
+  + In our [literature database](https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit#gid=1077173260) you can find bibliographical information about the source, as well as information on which idioms are represented in the sources (on the sheet [**source type and idiom**](https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit#gid=544122388), columns **idiom** and **type**).
 <br>
 <br>
       
