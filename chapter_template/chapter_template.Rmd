@@ -40,7 +40,7 @@ You can find more tips [here](https://www.markdownguide.org/basic-syntax).
 
 ### Literature references
 
-For literature references in the text we use **bibtexkeys** like in the feature datasets. Only you have to create a [separate table](https://sverhees.github.io/dagatlas_masterskaya/chapters.html#Literature_references) with the relevant references for your chapter, separate from the archive we use for datasets. The bibliography table sould be in the `.tsv` format and the name should be `NAME_OF_YOUR_FEATURE_bib.tsv`.
+For literature references in the text we use **bibtexkeys** like in the feature datasets. Only you have to create a [separate table](https://lingconlab.github.io/TALD_manual/chapters.html#Literature_references) with the relevant references for your chapter, separate from the archive we use for datasets. The bibliography table sould be in the `.tsv` format and the name should be `NAME_OF_YOUR_FEATURE_bib.tsv`.
 
 You cite them using the following syntax: 
 

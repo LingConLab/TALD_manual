@@ -1,6 +1,6 @@
 
 name: "TALD Contributor Manual"
-output_dir: .
+output_dir: "."
 navbar:
   title: "TALD Contributor Manual"
   left:

@@ -59,4 +59,4 @@ The table will be converted to a `.bib` file for the website automatically.
 
 Avoid spending a lot of time on formatting examples and compiling lists of abbreviations and references in your google doc draft version. Ultimately you will have to format your text in `Rmarkdown`, which will do a lot of the more annoying work for you.
 
-Don't be scared if you are not very experienced with R: all you need to format a chapter is [R](https://www.r-project.org) + [RStudio](https://www.rstudio.com) and our [chapter template](https://github.com/LingConLab/TALD_manual/blob/main/chapter_template/chapter_template.Rmd).
+Don't be scared if you are not very experienced with R: all you need to format a chapter is [R](https://www.r-project.org) + [RStudio](https://www.rstudio.com) and our [chapter template](chapter_template/chapter_template.Rmd).

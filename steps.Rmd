@@ -18,7 +18,7 @@ Make a folder for your feature in [the archive](https://drive.google.com/drive/u
 
 ## Step 2 - Add data
 
-Collect information for each language in [the feature template](https://docs.google.com/spreadsheets/d/1HCoEBiz8A2Vd9LUApRLtMANpnsUJN-k6EaXrBYfN0IU/edit#gid=0). Fill all required columns (see [Feature datasets > List of columns](https://sverhees.github.io/dagatlas_masterskaya/datasets.html#list-of-columns) for an explanation of the column names).
+Collect information for each language in [the feature template](https://docs.google.com/spreadsheets/d/1HCoEBiz8A2Vd9LUApRLtMANpnsUJN-k6EaXrBYfN0IU/edit#gid=0). Fill all required columns (see [Feature datasets > List of columns](datasets.html#list-of-columns) for an explanation of the column names).
  
 * We collect data from descriptive literature, which you can find in [our library](https://drive.google.com/drive/u/2/folders/14RBA31Cj1MsFSiV4E_ZqTLGOhI1dUfMD).
   
@@ -34,7 +34,7 @@ Collect information for each language in [the feature template](https://docs.goo
       
 ## Step 3 - Write a chapter
 
-Write an introductory chapter about your feature in `rmarkdown` using our [chapter template](https://github.com/sverhees/dagatlas_masterskaya/blob/main/chapter_template/chapter_template.Rmd). See [Writing a chapter](https://sverhees.github.io/dagatlas_masterskaya/chapters.html) for more detailed guidelines.
+Write an introductory chapter about your feature in `rmarkdown` using our [chapter template](chapter_template/chapter_template.Rmd). See [Writing a chapter](chapters.html) for more detailed guidelines.
 
 ## Step 4 - Check your files
 
