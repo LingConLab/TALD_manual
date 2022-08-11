@@ -52,7 +52,7 @@ Note: if you use an apostrophe (for example, in the name of a village (`Tad-Magi
 > One value = one row in the dataset. If you have multiple values for one idiom, create two rows for this idiom, each with a unique id. General rule of thumb for the **genlang_point** column is 1 "yes" per language (the Dargwa varieties listed in [Language sample](philosophy.html#The_language_sample) each count as a separate language), for **map** it is 1 "yes" per idiom.
 
 * **feature** - the name of your feature / chapter
-* **value1** - the relevant values of a specific parameter (e.g. attested / not attested)
+* **value1** - the relevant values of a specific parameter (e.g. attested / not attested). Try not to use many values for the parameter. The more values there are, the more difficult it is to perceive the final map
 * **value1_name** - the name of the parameter: the feature [Evidentiality in the tense system](http://lingconlab.ru/dagatlas/evidentiality_tense_map.html), for example, has two parameters: *Evidentiality as a meaning of the perfect* and *Evidentiality in the tense system*. The name of each parameter should be capitalized. The content of **value1_name** will be used as the title for your map
 
 > Maps are generated based on the **value1** column. If you want to show the distribution of multiple parameters, please name further columns **value2**, **value3**, etc., and accordingly: **value1_name**, **value2_name**.
