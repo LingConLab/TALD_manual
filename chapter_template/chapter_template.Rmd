@@ -1,19 +1,9 @@
----
-output: html_document
-#bibliography: chapter_template.bib
----
-
 ```{r, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(lingglosses)
 library(tidyverse)
 library(bib2df)
 library(lingtypology)
-
-# you need to provide the real name, not `chapter_template`
-file_name <- "chapter_template_bib.tsv"
-read_tsv(file_name, progress = FALSE) %>% 
-  df2bib(file_name %>% str_remove_all("[_\\.]tsv") %>%  str_replace("_bib$", "\\.bib"))
 ```
 
 ## 1. Introduction
@@ -175,6 +165,6 @@ If you want to add or correct glosses, you need to copy the generated list and a
 
 `r add_gloss("GL")` — fictional gloss; `r add_gloss("HAB")` — habitual; `r add_gloss("NEG")` — negation; `r add_gloss("NPST")` — non-past
 
-References are generated automatically if you provide a table with the references, as described [here]().
+References are generated automatically if you provide a table with the references, as described [here](chapters.html#literature_references).
 
 ## References
