@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Each feature dataset is accompanied by an introductory chapter. You can browse the [Atlas](http://lingconlab.ru/dagatlas/features.html) for some examples. 
 
-It can be convenient to write a draft in a google doc in your feature folder, but ultimately the text will have to be formatted in `Rmarkdown`. You can download a template for formatting a chapter [here](https://github.com/LingConLab/TALD_manual/tree/main/chapter_template) or [here](https://drive.google.com/file/d/17QIK00DNzD5OoKNnlPoICryb9Ochj1X1/view?usp=sharing).
+It can be convenient to write a draft in a google doc in your feature folder, but ultimately the text will have to be formatted in `Rmarkdown`. You can download a template for formatting a chapter [here](chapter_template/chapter_template.Rmd).
 
 # Structure of the text
 
@@ -49,11 +49,11 @@ For the chapter, you will have to compile your own list of references using this
 
 The references should be in [bibtex](https://en.wikipedia.org/wiki/BibTeX) format. You can find a list of entry types and their arguments [here](https://www.bibtex.com/e/entry-types/). Our [literature database](https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit?usp=sharing) is an example of a table of references in [bibtex](https://en.wikipedia.org/wiki/BibTeX) format.
 
-When adding values to the `TITLE` and `BOOKTITLE` fields, you need to surround capittal letters that are not at the beginning of the word with curly brackets, for example `Volume {IV}`. This is necessary so that such cases do not change to `Volume Iv` after rendering.
+When adding values to the `TITLE` and `BOOKTITLE` fields, you need to surround capital letters that are not at the beginning of the word with curly brackets, for example `Volume {IV}`. This is necessary so that such cases do not change to `Volume Iv` after rendering.
 
 In case you cite a source from our library in your chapter, all you have to do is copy the information from the [literature database](https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit?usp=sharing) to your own table.
 
-When you are done, upload the table with references to your feature folder using the following filenaming convention: name of your feature _references, e.g. **standardofcomparison_references**. 
+When you are done, upload the table with references to your feature folder using the following filenaming convention: name of your feature *_bib*, e.g. **standard_of_comparison_bib**. 
 
 The table will be converted to a `.bib` file for the website automatically.
 

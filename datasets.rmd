@@ -49,7 +49,7 @@ Note: if you use an apostrophe (for example, in the name of a village (`Tad-Magi
 * **genlang_point** - for our maps showing one datapoint per language we need to choose which datapoint (in case we have multiple points per language) is representative and will thus be showed on this map. For this purpose you need to set the appropriate row in this column to *yes* (no more than one per language), and set all other observations for the same language to *no*; see also [Philosophy - Current approach](philosophy.html#current_approach). The full list of languages can be found [here](philosophy.html#list_of_languages)
 * **map** - in some cases there are multiple observations for one idiom (e.g. one frequent suffix and more marginal one to express the same meaning). On the map we can show *only one value per datapoint*, so you can use this column to set information you want to see on the map to *yes* and everything else to *no*.
 
-> One value = one row in the dataset. If you have multiple values for one idiom, create two rows for this idiom, each with a unique id. General rule of thumb for the **genlang_point** column is 1 "yes" per language (the Dargwa varieties listed in [Language sample](philosophy.html#The_language_sample) each count as a separate language), for **map** it is 1 "yes" per idiom.
+> One value = one row in the dataset. If you have multiple values for one idiom, create two rows for this idiom, each with a unique id. The general rule of thumb for the **genlang_point** column is 1 "yes" per language (the Dargwa varieties listed in [Language sample](philosophy.html#The_language_sample) each count as a separate language), for **map** it is 1 "yes" per idiom.
 
 * **feature** - the name of your feature / chapter
 * **value1** - the relevant values of a specific parameter (e.g. attested / not attested). Try not to use many values for the parameter. The more values there are, the more difficult it is to perceive the final map
@@ -66,7 +66,7 @@ Note: if you use an apostrophe (for example, in the name of a village (`Tad-Magi
 * _**example_as_in_source**_ - original transcription of the example
 * _**example**_ - example of how the form is used (if applicable) in [Caucasiologist transcription](#transcription) with morpheme boundaries
 * _**translation_as_in_source**_ - original translation of the example
-* _**translation**_ - optional: your own English translation of the example in case the source was in Russian or you dislike the original translation for some reason
+* _**translation**_ - your own English translation of the example in case the source was in Russian or you dislike the original translation for some reason
 * _**gloss**_ - glosses for the example. Please follow the [Leipzig glossing rules](https://www.eva.mpg.de/lingua/pdf/Glossing-Rules.pdf) where possible. This includes unifying glosses from the original sources if necessary. Format the non-lexical glosses in CAPS.
 * _**example_source**_ - reference to the source of the example
 * _**example_page**_ - page reference for the example
@@ -114,7 +114,9 @@ In case a different resource by the same author and from the same year is alread
 
 **For unpublished sources** use the surname followed by the word draft, and the year in which the manuscript was produced or when it was expected to be published, for example `creisselsdraft2020'.
 
-> The **'author'** field should be filled as follows: last name, name and (if present) the first letter of the patronymic or second name, for example: *Абдуллаев, Сайгид Н*. If the source has more than one author use *и* (in Russian) or *and* (in English): *Абдуллаева, Айшат З. и Гаджиахмедов, Нурмагомед Э. и Кадыраджиев, Калсын С.* etc. If the source does not specify the full names, try to find them on the Internet rather than using initials.
+> The **'author'** field should be filled as follows: last name, name and (if present) the first letter of the patronymic or second name, for example: *Абдуллаев, Сайгид Н*. If the source has more than one author use *and* (in English): *Абдуллаева, Айшат З. and Гаджиахмедов, Нурмагомед Э. and Кадыраджиев, Калсын С.* etc. If the source does not specify the full names, try to find them on the Internet rather than using initials.
+
+For city names in the **'address'** field use English names, e.g. *Moscow*, not *Москва*.
 
 Don't forget to upload a copy of the source to the appropriate folder in the  [library](https://drive.google.com/drive/folders/14RBA31Cj1MsFSiV4E_ZqTLGOhI1dUfMD?usp=sharing) using the **bibtexkey** as filename.
 

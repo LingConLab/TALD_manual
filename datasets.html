@@ -409,7 +409,7 @@ div.tocify {
 <li><strong>map</strong> - in some cases there are multiple observations for one idiom (e.g. one frequent suffix and more marginal one to express the same meaning). On the map we can show <em>only one value per datapoint</em>, so you can use this column to set information you want to see on the map to <em>yes</em> and everything else to <em>no</em>.</li>
 </ul>
 <blockquote>
-<p>One value = one row in the dataset. If you have multiple values for one idiom, create two rows for this idiom, each with a unique id. General rule of thumb for the <strong>genlang_point</strong> column is 1 “yes” per language (the Dargwa varieties listed in <a href="philosophy.html#The_language_sample">Language sample</a> each count as a separate language), for <strong>map</strong> it is 1 “yes” per idiom.</p>
+<p>One value = one row in the dataset. If you have multiple values for one idiom, create two rows for this idiom, each with a unique id. The general rule of thumb for the <strong>genlang_point</strong> column is 1 “yes” per language (the Dargwa varieties listed in <a href="philosophy.html#The_language_sample">Language sample</a> each count as a separate language), for <strong>map</strong> it is 1 “yes” per idiom.</p>
 </blockquote>
 <ul>
 <li><strong>feature</strong> - the name of your feature / chapter</li>
@@ -428,7 +428,7 @@ div.tocify {
 <li><em><strong>example_as_in_source</strong></em> - original transcription of the example</li>
 <li><em><strong>example</strong></em> - example of how the form is used (if applicable) in <a href="#transcription">Caucasiologist transcription</a> with morpheme boundaries</li>
 <li><em><strong>translation_as_in_source</strong></em> - original translation of the example</li>
-<li><em><strong>translation</strong></em> - optional: your own English translation of the example in case the source was in Russian or you dislike the original translation for some reason</li>
+<li><em><strong>translation</strong></em> - your own English translation of the example in case the source was in Russian or you dislike the original translation for some reason</li>
 <li><em><strong>gloss</strong></em> - glosses for the example. Please follow the <a href="https://www.eva.mpg.de/lingua/pdf/Glossing-Rules.pdf">Leipzig glossing rules</a> where possible. This includes unifying glosses from the original sources if necessary. Format the non-lexical glosses in CAPS.</li>
 <li><em><strong>example_source</strong></em> - reference to the source of the example</li>
 <li><em><strong>example_page</strong></em> - page reference for the example</li>
@@ -475,8 +475,9 @@ surname (Latin script, lower case letters) + year</p>
 <p>In case a different resource by the same author and from the same year is already present in the <a href="https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit?usp=sharing">literature database</a>, add a keyword <em>following</em> the year, e.g. <code>bokarev1949</code> / <code>bokarev1949avar</code>.</p>
 <p><strong>For unpublished sources</strong> use the surname followed by the word draft, and the year in which the manuscript was produced or when it was expected to be published, for example `creisselsdraft2020’.</p>
 <blockquote>
-<p>The <strong>‘author’</strong> field should be filled as follows: last name, name and (if present) the first letter of the patronymic or second name, for example: <em>Абдуллаев, Сайгид Н</em>. If the source has more than one author use <em>и</em> (in Russian) or <em>and</em> (in English): <em>Абдуллаева, Айшат З. и Гаджиахмедов, Нурмагомед Э. и Кадыраджиев, Калсын С.</em> etc. If the source does not specify the full names, try to find them on the Internet rather than using initials.</p>
+<p>The <strong>‘author’</strong> field should be filled as follows: last name, name and (if present) the first letter of the patronymic or second name, for example: <em>Абдуллаев, Сайгид Н</em>. If the source has more than one author use <em>and</em> (in English): <em>Абдуллаева, Айшат З. and Гаджиахмедов, Нурмагомед Э. and Кадыраджиев, Калсын С.</em> etc. If the source does not specify the full names, try to find them on the Internet rather than using initials.</p>
 </blockquote>
+<p>For city names in the <strong>‘address’</strong> field use English names, e.g. ‘Moscow’ (not ‘Москва’).</p>
 <p>Don’t forget to upload a copy of the source to the appropriate folder in the <a href="https://drive.google.com/drive/folders/14RBA31Cj1MsFSiV4E_ZqTLGOhI1dUfMD?usp=sharing">library</a> using the <strong>bibtexkey</strong> as filename.</p>
 </div>
 </div>

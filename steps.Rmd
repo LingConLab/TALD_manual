@@ -1,5 +1,5 @@
 ---
-title: "Step by step instruction"
+title: "Step-by-step instruction"
 output:
   html_document:
     fig_cap: yes
@@ -16,7 +16,7 @@ On this page you can find a brief step-by-step instruction on how to collect dat
 
 ## Step 1 - Create a folder
 
-* Make a folder for your feature in [the archive](https://drive.google.com/drive/u/2/folders/1Rrm0NOH2E7dGMC97TdCFhjg7Y_FrAU3i).
+* Make a folder for your feature in [the features' folder](https://drive.google.com/drive/u/2/folders/1Rrm0NOH2E7dGMC97TdCFhjg7Y_FrAU3i).
 
 -----------
 
@@ -24,7 +24,7 @@ On this page you can find a brief step-by-step instruction on how to collect dat
 
 * Copy [the feature template](https://docs.google.com/spreadsheets/d/1HCoEBiz8A2Vd9LUApRLtMANpnsUJN-k6EaXrBYfN0IU/edit#gid=0) in the folder.
  
-* Collect data for each language from descriptive literature, which you can find in [our library](https://drive.google.com/drive/u/2/folders/14RBA31Cj1MsFSiV4E_ZqTLGOhI1dUfMD). Fill all required columns (see [List of columns](datasets.html#list-of-columns) for an explanation of the column names).
+* Collect data for each language from descriptive literature, which you can find in [our library](https://drive.google.com/drive/u/2/folders/14RBA31Cj1MsFSiV4E_ZqTLGOhI1dUfMD). Fill in all required columns (see [List of columns](datasets.html#list-of-columns) for an explanation of the column names).
 
 * (Optional) If you want to use a source that is not in the library yet:
 
@@ -53,9 +53,8 @@ See [Chapter](chapters.html) for more detailed guidelines.
   + your feature table in `.tsv`, with the name of your feature in lower case as filename: `YOUR_FEATURE.tsv`
   + your chapter text in `.Rmd` format (optionally a draft version in `.doc` format), with the name of your feature in lower case as filename: `YOUR_FEATURE.Rmd`
   + a table in `.tsv` format with references used in your text, with the name of your feature in lower case as filename: `YOUR_FEATURE_bib.tsv`
-  + a copy of the [TALD author agreement](https://docs.google.com/document/d/1tw-ty-pZglBhW8Ma3PfSit1migXc0vNX1AZE1BCyNio/edit?usp=sharing), filled out and signed
   
-* **Make sure the filenames of your feature table, text, and references are the same**, e.g. `evidentialtytense.tsv` (data), `evidentialitytense.Rmd` (text), `evidentialitytense_bib.tsv` (chapter references) 
+* **Make sure the filenames of your feature table, text, and references are the same**, e.g. `evidentialty_tense.tsv` (data), `evidentiality_tense.Rmd` (text), `evidentiality_tense_bib.tsv` (chapter references) 
 
 * **Don't forget** to add the date on which you submit your finished work to us in the **date** column of your feature table!
 
@@ -71,7 +70,7 @@ What to do if you want to make changes to your data or chapter after it has been
 
 * You will be contacted by an editor to discuss how to proceed. The process will differ depending on what and how much you want to change.
 
-* You can also contact the Atlas (cauatlas@gmail.com) or your responsible editor directly. However, we prefer to deal with any updates via Github, because it is more transparent.
+* You can also contact the Atlas (cauatlas@gmail.com) or your responsible editor directly.
 
 
 
