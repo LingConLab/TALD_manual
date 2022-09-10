@@ -6,7 +6,7 @@ library(bib2df)
 library(lingtypology)
 ```
 
-## 1. Introduction
+## Introduction
 
 ### Basic syntax
 
@@ -39,9 +39,9 @@ Forker [-@forker2018: 869--870] mentions some interesting information.
 
 This will generate regular-looking citations and a list of references automatically.
 
-## 2. Results
+## Results
 
-### 2.1 A nice subsection
+### A nice subsection
 
 In addition to the three mandatory sections, you can add as many chapter-specific subsections as you like.
 
@@ -49,18 +49,18 @@ In addition to the three mandatory sections, you can add as many chapter-specifi
 
 Use [tables generator](https://www.tablesgenerator.com/markdown_tables) to easily create tables in markdown syntax. You can copy a table directly from word.
 
-Each table should have a reference in the text, for example look at [Table 1](#m1)! The header of each table should be styled as follows (`#m1` is the key of the table, it is used to refer to the table in the text, the number in the key changes for each table). If you need to align the text in a column, use `:`
+Each table should have a reference in the text, for example look at [Table 1](#t1)! The header of each table should be styled as follows (`#t1` is the key of the table, it is used to refer to the table in the text, the number in the key changes for each table). If you need to align the text in a column, use `:`
 
-#### **Table 1.** A table {#m1 -}
+##### **Table 1.** A table {#t1 -}
 
 |  language  | meaning 1 | meaning 2 |
 |------------|----------:|:---------:|
 | lanuage 1  | -suffix   | -clitic   |
 | language 2 | -clitic   | -suffix   |
 
-You can also generate HTML if you have a more complex table (like [Table 2](#m2)) with formatting and colors.
+You can also generate HTML if you have a more complex table (like [Table 2](#t2)) with formatting and colors.
 
-#### **Table 2.** A fancier table {#m2 -}
+##### **Table 2.** A fancier table {#t2 -}
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -101,7 +101,7 @@ You can also generate HTML if you have a more complex table (like [Table 2](#m2)
 
 Each map or picture should have a reference in the text, for example look at [Figure 1](#f1)! If you use a map or picture, use the following header style:
 
-#### **Figure 1.** Map of some languages {#f2 -}
+##### **Figure 1.** Map of some languages {#f1 -}
 
 ```{r}
 map.feature(c("Rutul", "Ingush", "Udi"))
@@ -142,12 +142,24 @@ gloss_example(transliteration = "bur-**e-ri** c'in-ne-sːu",
               comment = "(lit. do not know how to)")
 ```
 
+If your example is too long and does not fit onto the page, you need to add the argument `results='asis'` to your chunk. `gloss_example()` will then automatically split your example into multiple rows:
+
+(@three) Mishlesh Tsakhur, East Caucasian [@somekey: 12]
+```{r results='asis'}
+
+gloss_example('za-s jaːluʁ **wo-b** **qa-b-ɨ**; turs-ubɨ qal-es-di ǯiqj-eː jaːluʁ-**o-b** **qa-b-ɨ**', 
+               '1SG.OBL-DAT shawl.3 AUX-3 PRF-3-bring.PFV woolen_sock-PL NPL.bring-PL-A.OBL place-IN shawl.3-AUX-3 PRF-3-bring.PFV',
+               '(they) **brought** me a shawl; instead of (lit. in place of bringing) woolen socks, (they) **brought** a shawl.',
+               '(Woolen socks are considered to be more valuable than a shawl.)')
+
+```
+
 Note that, if you want to bold several words in your example, then `**` should be around each of them: `transliteration = "**bur-e-ri** **c'in-ne-sːu**"`
 
 You can also use it to cite glosses in text: `r gloss_example("word=GLOSS", "meaning=GL", intext = TRUE)`
 
 
-## 3. Distribution
+## Distribution
 
 Describe the distribution with links to the appropriate maps on the data and maps page. The number of the map corresponds to the number of the value, see [Map 1](). The URL will be added later (between the brackets).
 
