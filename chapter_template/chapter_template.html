@@ -5682,11 +5682,26 @@ shawl.<span class="smallcaps">3</span>-<span class="smallcaps">aux</span>-<span 
 </div>
 <div id="list-of-glosses" class="section level2">
 <h2>List of glosses</h2>
-<p>The list of glosses used in your chapter will be generated automatically by the following command from the <a href="https://agricolamz.github.io/lingglosses/">lingglosses</a> package, use <code>make_gloss_list()</code>.</p>
-<p>The package cannot read your mind, however, so you have to check whether it interpreted your abbreviations correctly. In case you used a gloss that is not in the database (as I did with the fictional gloss GL), it will be marked in blue.</p>
-<p>If you want to add or correct glosses, you need to copy the generated list and adjust it manually:</p>
-<p><span class="smallcaps">gl</span> — fictional gloss; <span class="smallcaps">hab</span> — habitual; <span class="smallcaps">neg</span> — negation; <span class="smallcaps">npst</span> — non-past</p>
+<p>The list of glosses used in your chapter will be generated automatically by the following command from the <a href="https://agricolamz.github.io/lingglosses/">lingglosses</a> package.</p>
 <p><span class="smallcaps">1sg</span> — first person singular; <span class="smallcaps">3</span> — third person; <span class="smallcaps">a</span> — agent-like argument of canonical transitive verb; <span class="smallcaps">aux</span> — auxiliary; <span class="smallcaps">dat</span> — dative; <span class="smallcaps"><span style="background-color:#00d5ff;">gl</span></span> — ; <span class="smallcaps">hab</span> — habitual; <span class="smallcaps">in</span> — in a container; <span class="smallcaps">inf</span> — infinitive; <span class="smallcaps">neg</span> — negation; <span class="smallcaps">npl</span> — neutral plural; <span class="smallcaps">npst</span> — non-past; <span class="smallcaps">obl</span> — oblique; <span class="smallcaps">pfv</span> — perfective; <span class="smallcaps">pl</span> — plural; <span class="smallcaps">prf</span> — perfect</p>
+<p>The package cannot read your mind, however, so you have to check whether it interpreted your abbreviations correctly. In case you used a gloss that is not in the database (as I did with the fictional gloss GL), it will be marked in blue.</p>
+<p>If you want to use glosses in a table or in the text, it is possible to add them using the <code>add_gloss()</code>:</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="smallcaps">aff</span></th>
+<th><span class="smallcaps">neg</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="smallcaps">aor</span></td>
+<td>-∅</td>
+<td><em>-sːu</em></td>
+</tr>
+</tbody>
+</table>
 <p>References are generated automatically if you provide a table with the references, as described <a href="chapters.html#literature_references">here</a>.</p>
 </div>
 <div id="references" class="section level2">
