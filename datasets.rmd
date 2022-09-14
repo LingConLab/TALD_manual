@@ -100,7 +100,7 @@ If the source of the information is a personal conversation, it is necessary to 
 
 If you use a source which is not in our database yet, you will have to add it by submitting a [form](https://docs.google.com/forms/d/e/1FAIpQLSfekbCiSi5TVtJDAWcAzIajkwYyoR8WjRJ1tjkt0QS6kdkIEA/viewform?usp=sf_link) with the necessary information.
 
-> Russian resources are listed in Cyrillic script with a translation in English.
+> Russian resources are listed in Cyrillic script with a translation in English of the **title** and **booktitle** fields.
 
 The **bibtexkey** for a source is constructed as follows:
 
