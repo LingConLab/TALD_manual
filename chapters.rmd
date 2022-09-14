@@ -53,7 +53,7 @@ When adding values to the `TITLE` and `BOOKTITLE` fields, you need to surround c
 
 In case you cite a source from our library in your chapter, all you have to do is copy the information from the [literature database](https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit?usp=sharing) to your own table.
 
-When you are done, upload the table with references to your feature folder using the following filenaming convention: name of your feature *_bib*, e.g. **standard_of_comparison_bib**. 
+When you are done, upload the table with references to your feature folder using the following filenaming convention: name of your feature *_bib*, e.g. **standard_of_comparison_bib**. Note that the column headers should be in uppercase.
 
 The table will be converted to a `.bib` file for the website automatically.
 
