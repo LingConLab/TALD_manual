@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Each feature dataset is accompanied by an introductory chapter. You can browse the [Atlas](http://lingconlab.ru/dagatlas/features.html) for some examples. 
 
-It can be convenient to write a draft in a google doc in your feature folder, but ultimately the text will have to be formatted in `Rmarkdown`. You can download a template for formatting a chapter [here](chapter_template/chapter_template.Rmd).
+It can be convenient to write a draft in a google doc in your feature folder, but ultimately the text will have to be formatted in `Rmarkdown`. You can download a template for formatting a chapter [here](chapter_template/chapter_template.Rmd) and [the cheat sheet](chapter_template/chapter_cheatsheet.Rmd).
 
 # Structure of the text
 
