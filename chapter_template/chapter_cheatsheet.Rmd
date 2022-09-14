@@ -165,4 +165,4 @@ The list of glosses used in your chapter will be generated automatically by the 
 make_gloss_list()
 ```
 
-The package cannot read your mind, however, so you have to check whether it interpreted your abbreviations correctly. In case you used a gloss that is not in the database (as I did with the fictional gloss GL), it will be marked in blue.
+The package cannot read your mind, however, so you have to check whether it interpreted your abbreviations correctly. In case you used a gloss that is not in the database (as I did with the fictional gloss GL), it will be marked in blue. If you want to change or to add the gloss interpretation write it in the [database](https://docs.google.com/spreadsheets/d/1Lg65RHHenedt_XXOZQyRDcQ4-Nd-MhEpuvALO4DZHf4/edit#gid=0).
