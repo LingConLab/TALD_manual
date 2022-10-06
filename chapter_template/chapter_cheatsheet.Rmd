@@ -1,0 +1,168 @@
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(lingglosses)
+library(tidyverse)
+library(bib2df)
+library(lingtypology)
+```
+
+## Basic syntax
+
+*This* is how you get *cursive*, and **this** is how you get **bold** font.
+And this -- is how you get an en-dash, for example, for page ranges.
+
+Here is a footnote.[^my_footnote] And another one.[^another_one].
+
+[^my_footnote]: Oh, hi.
+[^another_one]: Oh, hi, again.
+
+- a
+- list
+* of
+* points
+  - with a subpoint
+
+Be sure to save the file with UTF-8 encoding, so that you can type IPA symbols like *ƛ*.
+
+You can find more tips [here](https://www.markdownguide.org/basic-syntax).
+
+## Literature references
+
+For literature references in the text we use **bibtexkeys** like in the feature datasets. Only you have to create a [separate table](https://lingconlab.github.io/TALD_manual/chapters.html#Literature_references) with the relevant references for your chapter, separate from the archive we use for datasets. The bibliography table sould be in the `.tsv` format and the name should be `NAME_OF_YOUR_FEATURE_bib.tsv`.
+
+You cite them using the following syntax: 
+
+Some interesting information [@harris2002].
+Forker [-@forker2018: 869--870] mentions some interesting information.
+
+This will generate regular-looking citations and a list of references automatically.
+
+## Tables
+
+Use [tables generator](https://www.tablesgenerator.com/markdown_tables) to easily create tables in markdown syntax. You can copy a table directly from word.
+
+Each table should have a reference in the text, for example look at [Table 1](#t1)! The header of each table should be styled as follows (`#t1` is the key of the table, it is used to refer to the table in the text, the number in the key changes for each table). If you need to align the text in a column, use `:`
+
+##### **Table 1.** A table {#t1 -}
+
+|  language  | meaning 1 | meaning 2 |
+|------------|----------:|:---------:|
+| lanuage 1  | -suffix   | -clitic   |
+| language 2 | -clitic   | -suffix   |
+
+You can also generate HTML if you have a more complex table (like [Table 2](#t2)) with formatting and colors.
+
+##### **Table 2.** A fancier table {#t2 -}
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-969i{background-color:#ffffc7;border-color:inherit;font-style:italic;text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-ncd7{background-color:#ffffc7;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-xzy6{border-color:inherit;color:#6665cd;text-align:left;vertical-align:top}
+.tg .tg-f8tv{border-color:inherit;font-style:italic;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky"></th>
+    <th class="tg-fymr">meaning 1</th>
+    <th class="tg-fymr">meaning 2</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">lanuage 1</td>
+    <td class="tg-ncd7">-suffix</td>
+    <td class="tg-969i">-clitic</td>
+  </tr>
+  <tr>
+    <td class="tg-xzy6">language 2</td>
+    <td class="tg-0pky">-clitic</td>
+    <td class="tg-f8tv">-suffix</td>
+  </tr>
+</tbody>
+</table>
+
+## Maps and picture
+
+Each map or picture should have a reference in the text, for example look at [Figure 1](#f1)! If you use a map or picture, use the following header style:
+
+##### **Figure 1.** Map of some languages {#f1 -}
+
+```{r}
+map.feature(c("Rutul", "Ingush", "Udi"))
+```
+
+
+## Examples
+
+For examples we use the [lingglosses](https://agricolamz.github.io/lingglosses/) package.
+
+Format your example as shown below, but add `, echo=FALSE` following the `r` in the code-block in the `.Rmd` file, so that only your example shows and not your source code.
+
+Each example should have a reference in the text, for example look at (@one)!
+
+(@one) Zilo Andi, East Caucasian [@somekey: 12]
+```{r}
+gloss_example(transliteration = "bur-**e-ri** c'in-ne-sːu",
+              glosses = "fly-**NPST-INF** know-HAB-NEG",
+              free_translation = "I cannot fly.",
+              comment = "(lit. do not know how to)")
+```
+
+If you need subexamples use tabulation before the letter:
+
+(@two) Zilo Andi, East Caucasian [@somekey: 12]
+    a.
+```{r}
+gloss_example(transliteration = "bur-**e-ri** c'in-ne-sːu",
+              glosses = "fly-**NPST-INF** know-HAB-NEG",
+              free_translation = "I cannot fly.",
+              comment = "(lit. do not know how to)")
+```
+    b.
+```{r}
+gloss_example(transliteration = "bur-**e-ri** c'in-ne-sːu",
+              glosses = "fly-**NPST-INF** know-HAB-NEG",
+              free_translation = "I cannot fly.",
+              comment = "(lit. do not know how to)")
+```
+
+If your example is too long and does not fit onto the page, you need to add the argument `results='asis'` to your chunk. `gloss_example()` will then automatically split your example into multiple rows:
+
+(@three) Mishlesh Tsakhur, East Caucasian [@somekey: 12]
+```{r results='asis'}
+
+gloss_example('za-s jaːluʁ **wo-b** **qa-b-ɨ**; turs-ubɨ qal-es-di ǯiqj-eː jaːluʁ-**o-b** **qa-b-ɨ**', 
+               '1SG.OBL-DAT shawl.3 AUX-3 PRF-3-bring.PFV woolen_sock-PL NPL.bring-PL-A.OBL place-IN shawl.3-AUX-3 PRF-3-bring.PFV',
+               '(they) **brought** me a shawl; instead of (lit. in place of bringing) woolen socks, (they) **brought** a shawl.',
+               '(Woolen socks are considered to be more valuable than a shawl.)')
+
+```
+
+Note that, if you want to bold several words in your example, then `**` should be around each of them: `transliteration = "**bur-e-ri** **c'in-ne-sːu**"`
+
+You can also use it to cite glosses in text: `r gloss_example("word=GLOSS", "meaning=GL", intext = TRUE)`
+
+
+## Stand-alone glosses
+
+If you want to use glosses in a table or in the text, it is possible to add them using the `add_gloss()`:
+
+|                      | `r add_gloss("AFF")` | `r add_gloss("NEG")` |
+|----------------------|----------------------|----------------------|
+| `r add_gloss("AOR")` | -∅                   | *-sːu*               |
+
+The list of glosses used in your chapter will be generated automatically by the following command from the [lingglosses](https://agricolamz.github.io/lingglosses/) package:
+
+```{r}
+make_gloss_list()
+```
+
+The package cannot read your mind, however, so you have to check whether it interpreted your abbreviations correctly. In case you used a gloss that is not in the database (as I did with the fictional gloss GL), it will be marked in blue. If you want to change or to add the gloss interpretation write it in the [database](https://docs.google.com/spreadsheets/d/1Lg65RHHenedt_XXOZQyRDcQ4-Nd-MhEpuvALO4DZHf4/edit#gid=0).

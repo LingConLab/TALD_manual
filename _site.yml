@@ -1,18 +1,24 @@
 
 name: "TALD Contributor Manual"
+output_dir: "."
 navbar:
   title: "TALD Contributor Manual"
   left:
     - text: "Home"
       href: index.html
-    - text: "Philosophy"
-      href: philosophy.html
-    - text: "Datasets"
-      href: datasets.html
-    - text: "Chapters"
-      href: chapters.html
-    - text: "Maps"
-      href: maps.html
-    - text: "Step-by-step"
+    - text: "How to start"
       href: steps.html
+    - text: "More"
+      icon: fa-info
+      menu:
+          - text: "Philosophy"
+            href: philosophy.html
+          - text: "Datasets"
+            href: datasets.html
+          - text: "Chapters"
+            href: chapters.html
+          - text: "Maps"
+            href: maps.html
+
+  
 

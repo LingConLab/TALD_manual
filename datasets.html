@@ -23,15 +23,8 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-      </style>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 
 
@@ -343,19 +336,30 @@ div.tocify {
   <a href="index.html">Home</a>
 </li>
 <li>
-  <a href="philosophy.html">Philosophy</a>
+  <a href="steps.html">How to start</a>
 </li>
-<li>
-  <a href="datasets.html">Datasets</a>
-</li>
-<li>
-  <a href="chapters.html">Chapters</a>
-</li>
-<li>
-  <a href="maps.html">Maps</a>
-</li>
-<li>
-  <a href="steps.html">Step-by-step</a>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-info"></span>
+     
+    More
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="philosophy.html">Philosophy</a>
+    </li>
+    <li>
+      <a href="datasets.html">Datasets</a>
+    </li>
+    <li>
+      <a href="chapters.html">Chapters</a>
+    </li>
+    <li>
+      <a href="maps.html">Maps</a>
+    </li>
+  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -378,35 +382,39 @@ div.tocify {
 <p>To create a dataset you will need the following things:</p>
 <ul>
 <li>Access to our <a href="https://drive.google.com/drive/folders/1qN3TpzX-wTxiX2ZX0ZNJ6SledqzLHE5W">archive</a></li>
-<li>A <a href="https://docs.google.com/spreadsheets/d/1ptIOqpr6PMLdMv0QOLShO_bvQMmYz_88q4My7rC9wY0/edit?usp=sharing">dataset template</a></li>
+<li>A <a href="https://docs.google.com/spreadsheets/d/1HCoEBiz8A2Vd9LUApRLtMANpnsUJN-k6EaXrBYfN0IU/edit#gid=0">dataset template</a></li>
 <li>Our <a href="https://drive.google.com/drive/folders/14RBA31Cj1MsFSiV4E_ZqTLGOhI1dUfMD">library</a> of descriptive sources</li>
 <li>Our <a href="https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit?usp=sharing">literature database</a> with bibliographical information about the sources in the library</li>
 </ul>
 <p>Start by creating a folder for your feature in the archive, and upload your dataset there, even if it is still a work in progress: this makes it easier to discuss any problems or questions you might have.</p>
 <p>You can see an example of a completed feature dataset <a href="https://docs.google.com/spreadsheets/d/1Emf_uhLgwlLWkqmnCKOJKm2OyyIUt4weq_qqklc_sWo/edit?usp=sharing">here</a>.</p>
-<p>For a quick reference on how to collect data, see the <a href="https://lingconlab.github.io/TALD_manual/steps.html">Step-by-step</a> instructions. The instructions below go into more detail.</p>
+<p>For a quick reference on how to collect data, see the <a href="steps.html">Step-by-step</a> instructions. The instructions below go into more detail.</p>
 <div id="list-of-columns" class="section level1">
 <h1>List of columns</h1>
+<p>Some of the columns are <strong>required</strong> (without them, there may be problems with rendering maps and chapters) and some <em><strong>are not</strong></em>.</p>
+<p>Note: if you use an apostrophe (for example, in the name of a village (<code>Tad-Magitl'</code>) or in transcription), use <a href="https://en.wikipedia.org/wiki/%27_(disambiguation)">U+0027</a> <code>'</code>. If you are working in Excel, when loading the table to the drive, make sure that the apostrophes remain correct.</p>
 <ul>
 <li><strong>id</strong> - unique number for each row = one observation in your dataset</li>
+<li><em><strong>family</strong></em> - language family</li>
+<li><em><strong>group</strong></em> - language branch/group</li>
 <li><p><strong>lang</strong> - language name</p></li>
 <li><strong>idiom</strong> - the name of a language variety; descriptive sources provide information on specific dialects or village varieties of languages, and we aim to be as precise as possible about where our information comes from; this also means that if a source says: “in dialect X, the same form is used”, you can add this as an observation to your dataset</li>
 <li><p><strong>type</strong> - specifies whether the idiom is a village variety, a dialect spoken in multiple villages, or a standard language; please use our standard names and type classifications</p></li>
 </ul>
 <blockquote>
-<p>For most sources in our archive, you can find the name and type of the idiom on the second sheet in the <a href="https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit?usp=sharing">literature database</a> &gt; <strong>source type and idiom</strong>. Alternatively, you can search for the name and type of a certain idiom in <a href="https://sverhees.github.io/master_villages/maps_new.html#dialects">the East Caucasian villages dataset</a>.</p>
+<p>In our <a href="https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit#gid=1077173260">literature database</a> you can find bibliographical information about the source, as well as information on which idioms are represented in the sources (on the sheet <a href="https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit#gid=544122388"><strong>source type and idiom</strong></a>, columns <strong>idiom</strong> and <strong>type</strong>). Alternatively, you can search for the name and type of a certain idiom in <a href="https://sverhees.github.io/master_villages/maps_new.html#dialects">the East Caucasian villages dataset</a>.</p>
 </blockquote>
 <ul>
-<li><strong>genlang_point</strong> - for our maps showing one datapoint per language we need to choose which datapoint (in case we have multiple points per language) is representative and will thus be showed on this map. For this purpose you need to set the appropriate row in this column to <em>yes</em> (no more than one per language), and set all other observations for the same language to <em>no</em>; see also <a href="https://lingconlab.github.io/TALD_manual/philosophy.html#current_approach">Philosophy - Current approach</a>. The full list of languages can be found <a href="https://lingconlab.github.io/TALD_manual/philosophy.html#list_of_languages">here</a></li>
+<li><strong>genlang_point</strong> - for our maps showing one datapoint per language we need to choose which datapoint (in case we have multiple points per language) is representative and will thus be showed on this map. For this purpose you need to set the appropriate row in this column to <em>yes</em> (no more than one per language), and set all other observations for the same language to <em>no</em>; see also <a href="philosophy.html#current_approach">Philosophy - Current approach</a>. The full list of languages can be found <a href="philosophy.html#list_of_languages">here</a></li>
 <li><strong>map</strong> - in some cases there are multiple observations for one idiom (e.g. one frequent suffix and more marginal one to express the same meaning). On the map we can show <em>only one value per datapoint</em>, so you can use this column to set information you want to see on the map to <em>yes</em> and everything else to <em>no</em>.</li>
 </ul>
 <blockquote>
-<p>One value = one row in the dataset. If you have multiple values for one idiom, create two rows for this idiom, each with a unique id. General rule of thumb for the <strong>genlang_point</strong> column is 1 “yes” per language (the Dargwa varieties listed in <a href="https://lingconlab.github.io/TALD_manual/philosophy.html#The_language_sample">Language sample</a> each count as a separate language), for <strong>map</strong> it is 1 “yes” per idiom.</p>
+<p>One value = one row in the dataset. If you have multiple values for one idiom, create two rows for this idiom, each with a unique id. The general rule of thumb for the <strong>genlang_point</strong> column is 1 “yes” per language (the Dargwa varieties listed in <a href="philosophy.html#The_language_sample">Language sample</a> each count as a separate language), for <strong>map</strong> it is 1 “yes” per idiom.</p>
 </blockquote>
 <ul>
 <li><strong>feature</strong> - the name of your feature / chapter</li>
-<li><strong>value1</strong> - the relevant values of a specific parameter (e.g. attested / not attested)</li>
-<li><strong>value1_name</strong> - the name of the parameter: the feature <a href="http://lingconlab.ru/dagatlas/evidentiality_tense_map.html">Evidentiality in the tense system</a>, for example, has two parameters: <em>Evidentiality as a meaning of the perfect</em> and <em>Evidentiality in the tense system</em>. The content of <strong>value1_name</strong> will be used as the title for your map</li>
+<li><strong>value1</strong> - the relevant values of a specific parameter (e.g. attested / not attested). Try not to use many values for the parameter. The more values there are, the more difficult it is to perceive the final map</li>
+<li><strong>value1_name</strong> - the name of the parameter: the feature <a href="http://lingconlab.ru/dagatlas/evidentiality_tense_map.html">Evidentiality in the tense system</a>, for example, has two parameters: <em>Evidentiality as a meaning of the perfect</em> and <em>Evidentiality in the tense system</em>. The name of each parameter should be capitalized. The content of <strong>value1_name</strong> will be used as the title for your map</li>
 </ul>
 <blockquote>
 <p>Maps are generated based on the <strong>value1</strong> column. If you want to show the distribution of multiple parameters, please name further columns <strong>value2</strong>, <strong>value3</strong>, etc., and accordingly: <strong>value1_name</strong>, <strong>value2_name</strong>.</p>
@@ -414,16 +422,17 @@ div.tocify {
 <ul>
 <li><strong>source</strong> - reference to the source you consulted (see <a href="#literature-references">Literature references</a> below)</li>
 <li><strong>page</strong> - relevant page in the source</li>
-<li><strong>comment</strong> - in this column you can “pour out your soul” in the words of G.A. Moroz: add any kind of thought on an observation or the source it appears in. Keep in mind, however, that anything you write here will be visible to users of the Atlas. So please write your comments in English, and make them clear and informative</li>
+<li><em><strong>comment</strong></em> - in this column you can “pour out your soul” in the words of G.A. Moroz: add any kind of thought on an observation or the source it appears in. Keep in mind, however, that anything you write here will be visible to users of the Atlas. So please write your comments in English, and make them clear and informative</li>
 <li><p><strong>contributor</strong> - your name in English, so we know how to properly credit your work</p></li>
-<li><strong>form</strong> - what the phoneme / morpheme / construction / lexeme looks like in <a href="#transcription">Caucasiologist transcription</a></li>
-<li><strong>example</strong> - example of how the form is used (if applicable) in <a href="#transcription">Caucasiologist transcription</a> with morpheme boundaries</li>
-<li><strong>translation_as_in_source</strong> - original translation of the example</li>
-<li><strong>translation</strong> - optional: your own English translation of the example in case the source was in Russian or you dislike the original translation for some reason</li>
-<li><strong>gloss</strong> - glosses for the example. Please follow the <a href="https://www.eva.mpg.de/lingua/pdf/Glossing-Rules.pdf">Leipzig glossing rules</a> where possible. This includes unifying glosses from the original sources if necessary. Format the non-lexical glosses in CAPS.</li>
-<li><strong>example_source</strong> - reference to the source of the example</li>
-<li><strong>example_page</strong> - page reference for the example</li>
-<li><p><strong>example_comment</strong> - any kind of comment you would like to add regarding the example</p></li>
+<li><em><strong>form</strong></em> - what the phoneme / morpheme / construction / lexeme looks like in <a href="#transcription">Caucasiologist transcription</a></li>
+<li><em><strong>example_as_in_source</strong></em> - original transcription of the example</li>
+<li><em><strong>example</strong></em> - example of how the form is used (if applicable) in <a href="#transcription">Caucasiologist transcription</a> with morpheme boundaries</li>
+<li><em><strong>translation_as_in_source</strong></em> - original translation of the example</li>
+<li><em><strong>translation</strong></em> - your own English translation of the example in case the source was in Russian or you dislike the original translation for some reason</li>
+<li><em><strong>gloss</strong></em> - glosses for the example. Please follow the <a href="https://www.eva.mpg.de/lingua/pdf/Glossing-Rules.pdf">Leipzig glossing rules</a> where possible. This includes unifying glosses from the original sources if necessary. Format the non-lexical glosses in CAPS.</li>
+<li><em><strong>example_source</strong></em> - reference to the source of the example</li>
+<li><em><strong>example_page</strong></em> - page reference for the example</li>
+<li><p><em><strong>example_comment</strong></em> - any kind of comment you would like to add regarding the example</p></li>
 <li><p><strong>date</strong> - the date on which you submitted your table; edits of the table after its first publication on the website will receive a new date stamp accordingly</p></li>
 </ul>
 </div>
@@ -434,7 +443,7 @@ div.tocify {
 <p>A <strong>bibtexkey</strong> is a unique identifier for a source which allows us to easily cite sources across the Atlas.</p>
 </blockquote>
 <p>(You can find our <a href="https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit?usp=sharing">library</a> of descriptive sources here.)</p>
-<p>In case you used multiple sources for one row / observation, separate the keys with a semicolon (<strong>;</strong>), and do the same with the page numbers in the adjacent column.</p>
+<p>In case you used multiple sources for one row / observation, separate the keys with a semicolon <strong>and space</strong> (<strong>; </strong>), and do the same with the page numbers in the adjacent column.</p>
 <p>If you refer to multiple page ranges from one source, separate them with a comma.</p>
 <p>If the entire source was relevant, for example because it was a paper devoted to your topic, or because you read the whole grammar and the feature is not mentioned anywhere, indicate NA in the page column.</p>
 <table>
@@ -452,11 +461,12 @@ div.tocify {
 </tbody>
 </table>
 <p>In the example above, pages 221 and 234-239 from <code>khalilova2009</code> have relevant information about the feature, while the paper <code>khalilova2011</code> was consulted/is relevant in its entirety.</p>
+<p>If the source of the information is a personal conversation, it is necessary to indicate the name of the source with a note <code>p.c.</code> for example <code>Santa Claus, p.c.</code>.</p>
 <div id="adding-new-literature" class="section level2">
 <h2>Adding new literature</h2>
 <p>If you use a source which is not in our database yet, you will have to add it by submitting a <a href="https://docs.google.com/forms/d/e/1FAIpQLSfekbCiSi5TVtJDAWcAzIajkwYyoR8WjRJ1tjkt0QS6kdkIEA/viewform?usp=sf_link">form</a> with the necessary information.</p>
 <blockquote>
-<p>Russian resources are listed in Cyrillic script with a translation in English.</p>
+<p>Russian resources are listed in Cyrillic script with a translation in English of the <strong>title</strong> and <strong>booktitle</strong> fields.</p>
 </blockquote>
 <p>The <strong>bibtexkey</strong> for a source is constructed as follows:</p>
 <p><code>khalilova2009</code><br />
@@ -465,8 +475,9 @@ surname (Latin script, lower case letters) + year</p>
 <p>In case a different resource by the same author and from the same year is already present in the <a href="https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit?usp=sharing">literature database</a>, add a keyword <em>following</em> the year, e.g. <code>bokarev1949</code> / <code>bokarev1949avar</code>.</p>
 <p><strong>For unpublished sources</strong> use the surname followed by the word draft, and the year in which the manuscript was produced or when it was expected to be published, for example `creisselsdraft2020’.</p>
 <blockquote>
-<p>The <strong>‘author’</strong> field should be filled as follows: last name, name and (if present) the first letter of the patronymic or second name, for example: <em>Абдуллаев, Сайгид Н</em>. If the source has more than one author use <em>и</em> (in Russian) or <em>and</em> (in English): <em>Абдуллаева, Айшат З. и Гаджиахмедов, Нурмагомед Э. и Кадыраджиев, Калсын С.</em> etc. If the source does not specify the full names, try to find them on the Internet rather than using initials.</p>
+<p>The <strong>‘author’</strong> field should be filled as follows: last name, name and (if present) the first letter of the patronymic or second name, for example: <em>Абдуллаев, Сайгид Н</em>. If the source has more than one author use <em>and</em> (in English): <em>Абдуллаева, Айшат З. and Гаджиахмедов, Нурмагомед Э. and Кадыраджиев, Калсын С.</em> etc. If the source does not specify the full names, try to find them on the Internet rather than using initials.</p>
 </blockquote>
+<p>For city names in the <strong>‘address’</strong> field use English names, e.g. <em>Moscow</em>, not <em>Москва</em>.</p>
 <p>Don’t forget to upload a copy of the source to the appropriate folder in the <a href="https://drive.google.com/drive/folders/14RBA31Cj1MsFSiV4E_ZqTLGOhI1dUfMD?usp=sharing">library</a> using the <strong>bibtexkey</strong> as filename.</p>
 </div>
 </div>
@@ -540,7 +551,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0

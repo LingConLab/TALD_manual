@@ -14,9 +14,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 Maps in [TALD](http://lingconlab.ru/dagatlas/) are generated automatically based on the **value** columns. <br>
-As explained in [Feature datasets](https://lingconlab.github.io/TALD_manual/datasets.html), you can have multiple value columns in order to generate different maps. 
+As explained in [Feature datasets](datasets.html), you can have multiple value columns in order to generate different maps. You can use both nominal and numeric values.
+
+> Keep in mind that a large number of values is difficult to perceive, do not use more than 5 values on one map.
 
 If you want, you can experiment with map visualizations by yourself using the `lingtypology` package for R. <br>
 You can find a detailed tutorial for the package [here](https://ropensci.github.io/lingtypology/).
 
-A sample code for experimenting with TALD visualizations as well as the necessary metadata such as village coordinates can be found [here](https://github.com/LingConLab/TALD_manual/tree/main/map_tutorial).
+A sample code for experimenting with TALD visualizations as well as the necessary metadata such as village coordinates can be found [here](map_tutorial/).
