@@ -130,7 +130,7 @@ Some general principles for transcription:
   * except diphtongs, because they would require double tildes, which looks pretty afwul: ũ̃̃o (in the source code these are two vowels with a tilde above it side-by-side)
   * gemination as well as long vowels are indicated with a lengthmark ː (triangles, not dots): чч > čː for consonants, ō > oː for vowels
   
-* [here](add proper link) is a table with all of the phonemes attested in the languages of our sample, transcribed in IPA (column **phoneme**); how to transcribe them for the atlas (column **TALD**), and how they are represented in different idioms and sources (all other columns). If you click on a column, you can view the bibtexkey of the source (in addition to the language and idiom). This also means that if you have the bibtexkey of a grammar, you can quickly find the corresponding phoneme and transcription.
+* [here](https://docs.google.com/spreadsheets/d/1KYV1yOettrVlsv2HFqpL_inoGCRmOyzmBoX10Ku4Oio/edit#gid=1009521071) is a table with all of the phonemes attested in the languages of our sample, transcribed in IPA (column **phoneme**); how to transcribe them for the atlas (column **TALD**), and how they are represented in different idioms and sources (all other columns). If you click on a column, you can view the bibtexkey of the source (in addition to the language and idiom). This also means that if you have the bibtexkey of a grammar, you can quickly find the corresponding phoneme and transcription.
 
 
 # Help
