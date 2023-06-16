@@ -37,8 +37,8 @@ Some of the columns are **required** (without them, there may be problems with r
 Note: if you use an apostrophe (for example, in the name of a village (`Tad-Magitl'`) or in transcription), use [U+0027](https://en.wikipedia.org/wiki/%27_(disambiguation)) `'`. If you are working in Excel, when loading the table to the drive, make sure that the apostrophes remain correct.
 
 * **id** - unique number for each row = one observation in your dataset
-* _**family**_ - language family
-* _**group**_ - language branch/group
+* **family** - language family
+* **group** - language branch/group
 * **lang** - language name
 
 * **idiom** - the name of a language variety; descriptive sources provide information on specific dialects or village varieties of languages, and we aim to be as precise as possible about where our information comes from; this also means that if a source says: "in dialect X, the same form is used", you can add this as an observation to your dataset
