@@ -150,6 +150,8 @@ Note that, if you want to bold several words in your example, then `**` should b
 
 You can also use it to cite glosses in text: `r gloss_example("word=GLOSS", "meaning=GL", intext = TRUE)`
 
+For infixes please do not use greater-than sign (>) and less-than sign (<), but single right-pointing angle quotation mark (›) and single left-pointing angle quotation mark (‹).  
+
 
 ## Stand-alone glosses
 
