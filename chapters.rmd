@@ -45,7 +45,7 @@ Below is a list of recommended sections and points to address in the text.
 
 # Literature references
 
-For the chapter, you will have to compile your own list of references using this [table template](https://drive.google.com/file/d/17QIK00DNzD5OoKNnlPoICryb9Ochj1X1/view?usp=sharing). 
+For the chapter, you will have to compile your own list of references using this [table template](https://docs.google.com/spreadsheets/d/1DrNPxHFnCHaUAdFgPzdAhXMJ4nEzl0MvZsTcvcA03EY/edit#gid=0). You can see an example of a completed list of references [here](https://docs.google.com/spreadsheets/d/1e2WS1F9P0Eyp4et99JrH4PDxEQnHk1OcSzV6c3Vl6-I/edit#gid=883415171).
 
 The references should be in [bibtex](https://en.wikipedia.org/wiki/BibTeX) format. You can find a list of entry types and their arguments [here](https://www.bibtex.com/e/entry-types/). Our [literature database](https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit?usp=sharing) is an example of a table of references in [bibtex](https://en.wikipedia.org/wiki/BibTeX) format.
 
