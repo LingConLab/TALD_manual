@@ -13,7 +13,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Maps in [TALD](http://lingconlab.ru/dagatlas/) are generated automatically based on the **value** columns. <br>
+Maps in [TALD](https://lingconlab.ru/tald) are generated automatically based on the **value** columns. <br>
 As explained in [Feature datasets](datasets.html), you can have multiple value columns in order to generate different maps. You can use both nominal and numeric values.
 
 > Keep in mind that a large number of values is difficult to perceive, do not use more than 5 values on one map.
