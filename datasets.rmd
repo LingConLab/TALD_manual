@@ -19,12 +19,12 @@ Feature datasets for the Atlas are based on descriptive literature.
 
 To create a dataset you will need the following things:
 
-* Access to our [archive](https://drive.google.com/drive/folders/1qN3TpzX-wTxiX2ZX0ZNJ6SledqzLHE5W)
+* Access to our [drive](https://drive.google.com/drive/folders/1qN3TpzX-wTxiX2ZX0ZNJ6SledqzLHE5W)
 * A [dataset template](https://docs.google.com/spreadsheets/d/1HCoEBiz8A2Vd9LUApRLtMANpnsUJN-k6EaXrBYfN0IU/edit#gid=0)
 * Our [library](https://drive.google.com/drive/folders/14RBA31Cj1MsFSiV4E_ZqTLGOhI1dUfMD) of descriptive sources
 * Our [literature database](https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit?usp=sharing) with bibliographical information about the sources in the library
 
-Start by creating a folder for your feature in the archive, and upload your dataset there, even if it is still a work in progress: this makes it easier to discuss any problems or questions you might have.
+Start by creating a folder for your feature in the drive, and upload your dataset there, even if it is still a work in progress: this makes it easier to discuss any problems or questions you might have.
 
 You can see an example of a completed feature dataset [here](https://docs.google.com/spreadsheets/d/1Emf_uhLgwlLWkqmnCKOJKm2OyyIUt4weq_qqklc_sWo/edit?usp=sharing).
 
@@ -41,21 +41,21 @@ Note: if you use an apostrophe (for example, in the name of a village (`Tad-Magi
 * **group** - language branch/group
 * **lang** - language name
 
-* **idiom** - the name of a language variety; descriptive sources provide information on specific dialects or village varieties of languages, and we aim to be as precise as possible about where our information comes from; this also means that if a source says: "in dialect X, the same form is used", you can add this as an observation to your dataset
-* **type** - specifies whether the idiom is a village variety, a dialect spoken in multiple villages, or a standard language; please use our standard names and type classifications
+* **idiom** - the name of a language variety; descriptive sources provide information on specific dialects or village varieties of languages, and we aim to be as precise as possible about where our information comes from; this also means that if a source says: "in dialect X, the same form is used", you can add this as an observation to your dataset.
+* **type** - specifies whether the idiom is a village variety, a dialect spoken in multiple villages, or a standard language; please use our standard names and type classifications.
 
-> In our [literature database](https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit#gid=1077173260) you can find bibliographical information about the source, as well as information on which idioms are represented in the sources (on the sheet [**source type and idiom**](https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit#gid=544122388), columns **idiom** and **type**). Alternatively, you can search for the name and type of a certain idiom in [the East Caucasian villages dataset](https://sverhees.github.io/master_villages/maps_new.html#dialects).
+> You can search for the name and type of a certain idiom in [the East Caucasian villages dataset](https://raw.githubusercontent.com/LingConLab/TALD/refs/heads/master/data/tald_villages.csv). Sometimes the information on which idioms are described and where the data has been collected is given at the beginning of the source, so we recommend to search for this information there.
 
-* **genlang_point** - for our maps showing one datapoint per language we need to choose which datapoint (in case we have multiple points per language) is representative and will thus be showed on this map. For this purpose you need to set the appropriate row in this column to *yes* (no more than one per language), and set all other observations for the same language to *no*; see also [Philosophy - Current approach](philosophy.html#current_approach). The full list of languages can be found [here](philosophy.html#list_of_languages)
-* **map** - in some cases there are multiple observations for one idiom (e.g. one frequent suffix and more marginal one to express the same meaning). On the map we can show *only one value per datapoint*, so you can use this column to set information you want to see on the map to *yes* and everything else to *no*.
+* **genlang_point** - for our maps showing one datapoint per language we need to choose which datapoint (in case we have multiple points per language) is representative and will thus be showed on this map. For this purpose you need to set the appropriate row in this column to *yes* (no more than one per language), and set all other observations for the same language to *no*; see also [Methods - Current approach](philosophy.html#current_approach). The full list of languages can be found [here](https://lingconlab.ru/tald/languages.html).
+* **map** - in some cases there are multiple observations for one idiom (e.g. one frequent suffix and a more marginal one to express the same meaning). On the map we can show *only one value per datapoint*, so you can use this column to set information you want to see on the map to *yes* and everything else to *no*.
 
-> One value = one row in the dataset. If you have multiple values for one idiom, create two rows for this idiom, each with a unique id. The general rule of thumb for the **genlang_point** column is 1 "yes" per language (the Dargwa varieties listed in [Language sample](philosophy.html#The_language_sample) each count as a separate language), for **map** it is 1 "yes" per idiom.
+> One value = one row in the dataset. If you have multiple values for one idiom, create two rows for this idiom, each with a unique id. The general rule of thumb for the **genlang_point** column is 1 "yes" per language, for **map** it is 1 "yes" per idiom.
 
-* **feature** - the name of your feature / chapter
-* **value1** - the relevant values of a specific parameter (e.g. attested / not attested). Try not to use many values for the parameter. The more values there are, the more difficult it is to perceive the final map
-* **value1_name** - the name of the parameter: the feature [Evidentiality in the tense system](http://lingconlab.ru/dagatlas/evidentiality_tense_map.html), for example, has two parameters: *Evidentiality as a meaning of the perfect* and *Evidentiality in the tense system*. The name of each parameter should be capitalized. The content of **value1_name** will be used as the title for your map
+* **chapter** - the name of your chapter
+* **feature1** - the name of the feature: the chapter [Evidentiality in the tense system](http://lingconlab.ru/dagatlas/evidentiality_tense_map.html), for example, has two features: *Evidentiality as a meaning of the perfect* and *Evidentiality in the tense system*. The name of each feature should be capitalized. The content of **feature1** will be used as a title for your map.
+* **value1** - the relevant values of a specific feature (e.g. attested / not attested). Try not to use too many values for the feature. The more values there are, the more difficult it is to perceive the final map.
 
-> Maps are generated based on the **value1** column. If you want to show the distribution of multiple parameters, please name further columns **value2**, **value3**, etc., and accordingly: **value1_name**, **value2_name**.
+> Maps are generated based on the **value1** column. If you want to show the distribution of multiple parameters, please name further columns **value2**, **value3**, etc., and accordingly: **feature2**, **feature3**.
 
 * **source** - reference to the source you consulted (see [Literature references](#literature-references) below)
 * **page** - relevant page in the source
@@ -72,7 +72,7 @@ Note: if you use an apostrophe (for example, in the name of a village (`Tad-Magi
 * _**example_page**_ - page reference for the example
 * _**example_comment**_ - any kind of comment you would like to add regarding the example
 
-* **date** - the date on which you submitted your table; edits of the table after its first publication on the website will receive a new date stamp accordingly
+* **date** - the date on which you submitted your table; edits of the table after its first publication on the website will receive a new date stamp accordingly.
 
 # Literature references
 
