@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Updated: `r Sys.Date()`
 
-Welcome to the Contributor Manual for the [Typological Atlas of the Languages of Daghestan (TALD)](http://lingconlab.ru/dagatlas/)!
+Welcome to the Contributor Manual for the [Typological Atlas of the Languages of Daghestan (TALD)](https://lingconlab.ru/tald)!
 
 Here you will find basic instructions for collecting 
 a [feature dataset](datasets.html) for the Atlas, writing and formatting
