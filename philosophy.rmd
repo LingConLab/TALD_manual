@@ -1,6 +1,6 @@
 
 ---
-title: "Philosophy"
+title: "Methods"
 output:
   html_document:
     fig_cap: yes
@@ -15,17 +15,17 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-The idea of the [Typological Atlas of Daghestan](http://lingconlab.ru/dagatlas/) was to create a tool for the visualization of linguistic features typical of the languages of Daghestan.
+The idea of the [Typological Atlas of Daghestan](https://lingconlab.ru/tald) was to create a tool for the visualization of linguistic features typical of the languages of Daghestan.
 
-Although the language sample underlying [TALD](http://lingconlab.ru/dagatlas/) has grown to include a number of neighboring languages (more on that in [Language sample](#the-language-sample) below), the core of the project remains Daghestan.
+Although the language sample underlying [TALD](https://lingconlab.ru/tald) has grown to include a number of neighboring languages (more on that in [Language sample](#the-language-sample) below), the core of the project remains Daghestan.
 
-Our aim is to achieve maximum coverage of languages and dialects. Datasets on particular topics should be updatable, so that our map visualizations become incrementally more accurate. In order to make the resource updatable, contributors can choose to maintain the right to approve or reject any proposed updates or corrections, or they can choose to waive that right. Note that if you want to stay involved, this also entails a responsibility to review and reply to propositions within a certain time-frame. See [Step 5](steps.html) on how to propose changes to a dataset or chapter that is already published. 
+Our aim is to achieve maximum coverage of languages and dialects. Datasets on particular topics should be updatable, so that our map visualizations become incrementally more accurate. In order to make the resource updatable, contributors can choose to maintain the right to approve or reject any proposed updates or corrections, or they can choose to waive that right. Note that if you want to stay involved, this also entails a responsibility to review and reply to propositions within a certain time frame. See [Step 5](steps.html) on how to propose changes to a dataset or chapter that is already published. 
 
-Data on linguistic features is collected primarily from descriptive literature; as a result, the Atlas can also be helpful in bibliographical research.
+Data on linguistic features is collected primarily from descriptive literature. As a result, the Atlas can also be helpful in bibliographical research.
 
 # Datapoints
 
-The initial approach of [TALD](http://lingconlab.ru/dagatlas/) assigned one value for a linguistic feature to each language, based on a representative doculect. 
+The initial approach of [TALD](https://lingconlab.ru/tald) assigned one value for a linguistic feature to each language, based on a representative doculect. 
 
 This information could then be mapped onto generalized language datapoints, or all villages where the language in question is spoken.
 
@@ -44,7 +44,7 @@ knitr::include_graphics(c("images/walsex.png","images/taldex.png"))
 |Karata  |Initial consonant of 'bridge'|ƛ'   |ƛ'eru|
 </center>
 
-A benefit of the visualization on the right, is that it shows the distribution and size of language communities more accurately. A drawback is that it leads to gross overgeneralization and erases dialectal differences, because it is not based on more data than the visualization on the left. 
+A benefit of the visualization on the right is that it shows the distribution and size of language communities more accurately. A drawback is that it leads to gross overgeneralization and erases dialectal differences, because it is not based on more data than the visualization on the left. 
 
 All of the Avar villages, for example, are colored according to data from Standard Avar, while we know that 'bridge' in the Zaqatala dialect spoken in Northern Azerbaijan is pronounced *kːjo*. These villages should thus have a different value.
 
@@ -173,11 +173,11 @@ The coverage of the Atlas is far from sufficient because we lack data for many d
 
 # Map visualization{.tabset .tabset-fade .tabset-pills}
 
-[TALD](http://lingconlab.ru/dagatlas/) currently offers three different map visualizations:
+[TALD](https://lingconlab.ru/tald) currently offers three different map visualizations:
 
-1. **Language and feature** shows the language affiliation (inner dot) and the value for the linguistic feature (outer dot) for each village.
-2. **Data granularity** allows the user to show only certain levels of data accuracy for the feature. For example you can uncheck "language" to remove all the dots that were colored according to general information about the language in the absence of more accurate data. In this case it will remove all Andi villages that have no dialect classification.
-3. **General datapoints** displays one datapoint for each language in the sample, showing the language affiliation (inner dot) and the value for the linguistic feature (outer dot) for each point.
+1. **General datapoints** displays one datapoint for each language in the sample, showing the language affiliation (inner dot) and the value for the linguistic feature (outer dot) for each point.
+2. **Extrapolated data** represents each language as a cluster of dots, which correspond to villages where a certain language is spoken.
+3. **Data granularity** allows the user to show only certain levels of data accuracy for the feature. For example, you can uncheck "language" to remove all the dots that were colored according to general information about the language in the absence of more accurate data. In this case it will remove all Andi villages that have no dialect classification.
 
 You can click on a datapoint to view a pop-up window with the name of the language (with a link to the [Glottolog](https://glottolog.org) database), the village, the granularity of data used to color this datapoint, and the value.
 
@@ -274,7 +274,7 @@ alldata3 <- alldata2[!duplicated(alldata2$village),]
 
 ```
 
-## 1. Language and feature
+## 1. Extrapolated data
 
 ```{r, echo=FALSE, message=FALSE}
 
@@ -337,107 +337,10 @@ map.feature(feature_l$lang,
 
 # The language sample
 
-As mentioned earlier, [TALD](http://lingconlab.ru/dagatlas/) was originally conceived of as a resource about the languages of Daghestan. 
+As mentioned earlier, [TALD](https://lingconlab.ru/tald) was originally conceived of as a resource about the languages of Daghestan. 
 
-[The East Caucasian villages dataset](https://github.com/sverhees/master_villages) -- a dataset that contains a list of villages in the eastern Caucasus, their coordinates, and the languages spoken there -- was created as a basis for visualizations in the Atlas. Initially it covered all villages of Daghestan and some East Caucasian speaking communities in Georgia and Northern Azerbaijan.
+[The East Caucasian villages dataset](https://raw.githubusercontent.com/LingConLab/TALD/refs/heads/master/data/tald_villages.csv) -- a dataset that contains a list of villages in the eastern Caucasus, their coordinates, and the languages spoken there -- was created as a basis for visualizations in the Atlas. Initially it covered all villages of Daghestan and some East Caucasian speaking communities in Georgia and Northern Azerbaijan.
 
 Villages of Chechnya and Ingushetia, and several more communities in Azerbaijan and Georgia, were added later. It was relevant to include these extra datapoints outside of Daghestan for the development of areal hypotheses.
 
----
-
-## Northeastern Daghestan
-
-Villages located in the northeastern part of Daghestan are not displayed in the Atlas. This area was settled only relatively recently, and is much more ethnically mixed than the rest of the area, as you can see [here](https://sverhees.github.io/master_villages/maps_new.html). A large part of it remains virtually uncharted (though see Yuri Koryakov's efforts to close this gap [here](https://jirzik.livejournal.com/3002.html)), and is currently undergoing changes.
-
-In addition, little to nothing is known about the varieties of the languages spoken there. In some cases we know the village of origin for most of its inhabitants (e.g. Novogagatli was founded by settlers from the Andi village Gagatli), but we do not know how well their dialect is preserved and to what extent their population is ethnically and linguistically homogeneous.
-
-Therefore, we decided to exclude the newly settled region from our visualization (for now).
-
----
-
-## List of languages
-
-Below is a list of the languages included in our sample, grouped by language family and branch.
-
-#### East Caucasian
-
-* **Avar**
-  * Avar
-
-* **Andic**
-  * Akhvakh
-  * Andi
-  * Bagvalal
-  * Botlikh
-  * Chamalal
-  * Godoberi
-  * Karata
-  * Tindi
-  
-* **Tsezic**
-  * Bezhta
-  * Hinuq
-  * Hunzib
-  * Khwarshi
-  * Tsez
-
-* **Dargwa**
-  * Standard Dargwa
-  * *Chirag*
-  * Itsari
-  * Kaitag
-  * Kubachi
-  * Mehweb
-  * Tanty
- 
-<font color = "dimgray">Dargwa is considered a single language with a number of highly divergent dialects by some, and a group of distinct but related languages by others. In our map visualizations with one dot per language, several Dargwa varieties are shown, because they are sufficiently divergent. However, since our data comes from descriptive literature, we are unfortunately bound to some extent to the post 1930s view of Dargwa as a single language. In our [villages dataset](https://sverhees.github.io/master_villages/maps_new.html#dialects), for example, a variety like Mehweb forms part of the Northern Dargwa dialect group. We cannot rearrange this underlying tree-structure too drastically for practical reasons. 
-
-Unfortunately we do not have a full reference grammar for *Chirag* yet, so you can leave the row for Chirag empty for now.
-</font color>   
-
-* **Lak**
-  * Lak
-
-* **Lezgic**
-  * Agul
-  * Archi
-  * Budukh
-  * Kryz
-  * Lezgian
-  * Rutul
-  * Tabasaran
-  * Tsakhur
-  * Udi
-
-* **Khinalug**
-  * Khinalug
-
-* **Nakh**
-  * Chechen
-  * Ingush
-  * Tsova-Tush (Batsbi)
-
-#### Indo-European
-
-* **Armenic**
-  * Armenian
-
-<font color = "dimgray">Armenian appeared in our sample due to a small village in northeastern Daghestan where the language is spoken. Although the village was lost after we removed this area from our visualizations, we decided to keep Armenian as an important language of the region.</font color>
-
-* **Iranian**
-  * Tat
-
-#### Kartvelian
-
-* Georgian
-
-<font color = "dimgray">Georgian is spoken in the Qakh district of Azerbaijan, alongside Tsakhur and Azerbaijani. It is also an important neighboring language.</font color>
-
-#### Turkic
-
-* **Kipchak**
-  * Kumyk
-  * Nogai
-
-* **Oghuz**
-  * Azerbaijani
+[Here](https://lingconlab.ru/tald/languages.html) is a list of the languages included in our sample.
