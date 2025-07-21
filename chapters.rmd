@@ -15,9 +15,9 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Each feature dataset is accompanied by an introductory chapter. You can browse the [Atlas](http://lingconlab.ru/dagatlas/features.html) for some examples. 
+Each feature dataset is accompanied by an introductory chapter. You can browse the [Atlas](https://lingconlab.ru/tald/features.html) for some examples. 
 
-It can be convenient to write a draft in a google doc in your feature folder, but ultimately the text will have to be formatted in `Rmarkdown`. You can download a template for formatting a chapter [here](chapter_template/chapter_template.Rmd) and the cheat sheet [here](chapter_template/chapter_cheatsheet.Rmd).
+A draft of your chapter should be initially uploaded to your feature folder in a google doc, but ultimately the text will have to be formatted in `Rmarkdown`. You can download a template for formatting a chapter [here](chapter_template/chapter_template.Rmd) and the cheat sheet [here](chapter_template/chapter_cheatsheet.Rmd).
 
 # Structure of the text
 
@@ -27,14 +27,14 @@ Below is a list of recommended sections and points to address in the text.
 - Briefly explains what the feature is
 - Gives a general characterization of how it is expressed in East Caucasian 
 - Gives a general characterization of how it is expressed cross-linguistically
-- If applicable: describes how the classification in [TALD](http://lingconlab.ru/dagatlas) differs from [WALS](http://wals.info) (e.g. our chapter on the [Standard of Comparison](http://lingconlab.ru/dagatlas/standard_of_comparison.html) shows more sub-types of spatial comparatives)
+- If applicable: describes how the classification in [TALD](https://lingconlab.ru/tald) differs from [WALS](http://wals.info) (e.g. our chapter on the [Standard of Comparison](https://lingconlab.ru/tald/002_standard_of_comparison.html) shows more sub-types of spatial comparatives)
 - Describes the goal of the text / map in one sentence: "Our goal is to classify the languages of Daghestan according to the type of spatial form used to mark the standard of comparison."
 
 ### Results
 - Summarizes the different types/values you discovered; types identified in the text should correspond to values shown on the map. If you want to fuse multiple types into one category, be sure to explain this decision in the text. 
 
 >**A hypothetical example:**  
-[Comparative constructions](http://lingconlab.ru/dagatlas/standard_of_comparison.html) are usually based on spatial case forms, which consist of a localization and a directionality. Let's say Chiara only cares about directionality, because differences in localization occur more rarely and do not show an interesting distribution. She can choose to create general categories based on directionality (e.g. essive and elative), and mention in her text that elative includes both super-elative and cont-elative forms.
+[Comparative constructions](https://lingconlab.ru/tald/002_standard_of_comparison.html) are usually based on spatial case forms, which consist of a localization and a directionality. Let's say Chiara only cares about directionality, because differences in localization occur more rarely and do not show an interesting distribution. She can choose to create general categories based on directionality (e.g. essive and elative), and mention in her text that elative includes both super-elative and cont-elative forms.
 
 - Provide examples
 - Identify which types are more or less common
@@ -45,7 +45,7 @@ Below is a list of recommended sections and points to address in the text.
 
 # Literature references
 
-For the chapter, you will have to compile your own list of references using this [table template](https://docs.google.com/spreadsheets/d/1DrNPxHFnCHaUAdFgPzdAhXMJ4nEzl0MvZsTcvcA03EY/edit#gid=0). You can see an example of a completed list of references [here](https://docs.google.com/spreadsheets/d/1e2WS1F9P0Eyp4et99JrH4PDxEQnHk1OcSzV6c3Vl6-I/edit#gid=883415171).
+For the chapter, you will have to compile your own list of references using this [table template](https://docs.google.com/spreadsheets/d/1DrNPxHFnCHaUAdFgPzdAhXMJ4nEzl0MvZsTcvcA03EY/edit?gid=0#gid=0). You can see an example of a completed list of references [here](https://docs.google.com/spreadsheets/d/1e2WS1F9P0Eyp4et99JrH4PDxEQnHk1OcSzV6c3Vl6-I/edit#gid=883415171).
 
 The references should be in [bibtex](https://en.wikipedia.org/wiki/BibTeX) format. You can find a list of entry types and their arguments [here](https://www.bibtex.com/e/entry-types/). Our [literature database](https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit?usp=sharing) is an example of a table of references in [bibtex](https://en.wikipedia.org/wiki/BibTeX) format.
 
