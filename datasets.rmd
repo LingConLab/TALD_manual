@@ -60,7 +60,6 @@ Note: if you use an apostrophe (for example, in the name of a village (`Tad-Magi
 * **source** - reference to the source you consulted (see [Literature references](#literature-references) below)
 * **page** - relevant page in the source
 * _**comment**_ - in this column you can "pour out your soul" in the words of G.A. Moroz: add any kind of thought on an observation or the source it appears in. Keep in mind, however, that anything you write here will be visible to users of the Atlas. So please write your comments in English, and make them clear and informative
-* **contributor** - your name in English, so we know how to properly credit your work
 
 * _**form**_ - what the phoneme / morpheme / construction / lexeme looks like in [Caucasiologist transcription](#transcription)
 * _**example_as_in_source**_ - original transcription of the example
@@ -72,6 +71,7 @@ Note: if you use an apostrophe (for example, in the name of a village (`Tad-Magi
 * _**example_page**_ - page reference for the example
 * _**example_comment**_ - any kind of comment you would like to add regarding the example
 
+* **contributor** - your name in English, so we know how to properly credit your work
 * **date** - the date on which you submitted your table; edits of the table after its first publication on the website will receive a new date stamp accordingly.
 
 # Literature references
