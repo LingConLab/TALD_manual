@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 The idea of the [Typological Atlas of Daghestan](https://lingconlab.ru/tald) was to create a tool for the visualization of linguistic features typical of the languages of Daghestan.
 
-Although the language sample underlying [TALD](https://lingconlab.ru/tald) has grown to include a number of neighboring languages (more on that in [Language sample](#the-language-sample) below), the core of the project remains Daghestan.
+Although the language sample underlying [TALD](https://lingconlab.ru/tald) has grown to include a number of neighboring languages (more on that in [Language sample](#Language-sample) below), the core of the project remains Daghestan.
 
 Our aim is to achieve maximum coverage of languages and dialects. Datasets on particular topics should be updatable, so that our map visualizations become incrementally more accurate. In order to make the resource updatable, contributors can choose to maintain the right to approve or reject any proposed updates or corrections, or they can choose to waive that right. Note that if you want to stay involved, this also entails a responsibility to review and reply to propositions within a certain time frame. See [Step 5](steps.html) on how to propose changes to a dataset or chapter that is already published. 
 
@@ -274,7 +274,24 @@ alldata3 <- alldata2[!duplicated(alldata2$village),]
 
 ```
 
-## 1. Extrapolated data
+## 1. General datapoints
+
+```{r, echo=FALSE, message=FALSE}
+
+map.feature(feature_l$lang,
+            features = feature_l$lang,
+            color = "#003366",
+            title = "Language",
+            label = feature_l$lang,
+            stroke.features = as.factor(feature_l$value),
+            stroke.color = c("MistyRose", "Firebrick", "Thistle"),
+            stroke.title = feature_l$feature[1],
+            zoom.control = T,
+            zoom.level = 7)
+
+```
+
+## 2. Extrapolated data
 
 ```{r, echo=FALSE, message=FALSE}
 
@@ -295,7 +312,7 @@ map.feature(alldata3$lang.x,
 
 ```
 
-## 2. Data granularity
+## 3. Data granularity
 
 ```{r, echo=FALSE, message=FALSE}
 
@@ -318,24 +335,7 @@ map.feature(alldata3$lang.x,
 
 ```
 
-## 3. General datapoints
-
-```{r, echo=FALSE, message=FALSE}
-
-map.feature(feature_l$lang,
-            features = feature_l$lang,
-            color = "#003366",
-            title = "Language",
-            label = feature_l$lang,
-            stroke.features = as.factor(feature_l$value),
-            stroke.color = c("MistyRose", "Firebrick", "Thistle"),
-            stroke.title = feature_l$feature[1],
-            zoom.control = T,
-            zoom.level = 7)
-
-```
-
-# The language sample
+# Language sample
 
 As mentioned earlier, [TALD](https://lingconlab.ru/tald) was originally conceived of as a resource about the languages of Daghestan. 
 
