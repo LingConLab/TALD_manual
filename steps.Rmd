@@ -16,13 +16,13 @@ On this page you can find a brief step-by-step instruction on how to collect dat
 
 ## Step 1 - Create a folder
 
-* Make a folder for your feature in [the features' folder](https://drive.google.com/drive/u/2/folders/1Rrm0NOH2E7dGMC97TdCFhjg7Y_FrAU3i).
+* Make a folder for your feature in the [features' folder](https://drive.google.com/drive/u/2/folders/1Rrm0NOH2E7dGMC97TdCFhjg7Y_FrAU3i).
 
 -----------
 
 ## Step 2 - Add data
 
-* Copy [the feature template](https://docs.google.com/spreadsheets/d/1HCoEBiz8A2Vd9LUApRLtMANpnsUJN-k6EaXrBYfN0IU/edit?gid=0#gid=0) in the folder.
+* Copy the [feature template](https://docs.google.com/spreadsheets/d/1HCoEBiz8A2Vd9LUApRLtMANpnsUJN-k6EaXrBYfN0IU/edit?gid=0#gid=0) in the folder.
  
 * Collect data for each language from descriptive literature, which you can find in [our library](https://drive.google.com/drive/u/2/folders/14RBA31Cj1MsFSiV4E_ZqTLGOhI1dUfMD). Fill in all required columns (see [List of columns](datasets.html#list-of-columns) for an explanation of the column names).
 
@@ -36,17 +36,17 @@ See [Datasets](datasets.html) for more detailed guidelines.
 
 * Contact your expert consultant and the responsible editor and ask them to read your chapter.
 
-* After the final version of the chapter is ready, convert it to rmarkdown using our [chapter template](chapter_template/chapter_template.Rmd) and [the cheat sheet](chapter_template/chapter_cheatsheet.Rmd).
+* After the final version of the chapter is ready, convert it to rmarkdown using our [chapter template](chapter_template/chapter_template.Rmd) and the [cheat sheet](chapter_template/chapter_cheatsheet.Rmd).
 
 * Compile your own list of references using this [table template](https://docs.google.com/spreadsheets/d/1DrNPxHFnCHaUAdFgPzdAhXMJ4nEzl0MvZsTcvcA03EY/edit?gid=0#gid=0). 
 
-See [Chapter](chapters.html) for more detailed guidelines.
+See [Chapters](chapters.html) for more detailed guidelines.
 
 ------------
 
 ## Step 4 - Check your files
 
-* Check that by the end of the work, your folder in [the Atlas drive](https://drive.google.com/drive/u/2/folders/1Rrm0NOH2E7dGMC97TdCFhjg7Y_FrAU3i) contains the following things:
+* Check that by the end of the work, your folder in the [Atlas drive](https://drive.google.com/drive/u/2/folders/1Rrm0NOH2E7dGMC97TdCFhjg7Y_FrAU3i) contains the following things:
 
   + your feature table, with the name of your feature in lower case as filename: `YOUR_FEATURE`
   + your chapter text in `.Rmd` format (in addition to a draft version in `.doc` format), with the name of your feature in lower case as filename: `YOUR_FEATURE.Rmd`
