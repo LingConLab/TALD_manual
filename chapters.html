@@ -13,48 +13,41 @@
 
 <title>How to write a chapter</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-
-
-
 
 <style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
 
 
 
@@ -64,10 +57,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -84,40 +73,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 60px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h2 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h3 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h4 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h5 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h6 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -145,7 +110,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -157,7 +122,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -167,11 +132,28 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -183,13 +165,12 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -197,16 +178,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -309,7 +283,7 @@ div.tocify {
 
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
+<div class="row">
 <div class="col-xs-12 col-sm-4 col-md-3">
 <div id="TOC" class="tocify">
 </div>
@@ -323,7 +297,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -338,28 +312,17 @@ div.tocify {
 <li>
   <a href="steps.html">How to start</a>
 </li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    <span class="fa fa-info"></span>
-     
-    More
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="philosophy.html">Philosophy</a>
-    </li>
-    <li>
-      <a href="datasets.html">Datasets</a>
-    </li>
-    <li>
-      <a href="chapters.html">Chapters</a>
-    </li>
-    <li>
-      <a href="maps.html">Maps</a>
-    </li>
-  </ul>
+<li>
+  <a href="methods.html">Methods</a>
+</li>
+<li>
+  <a href="datasets.html">Datasets</a>
+</li>
+<li>
+  <a href="chapters.html">Chapters</a>
+</li>
+<li>
+  <a href="maps.html">Maps</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -369,7 +332,7 @@ div.tocify {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -378,29 +341,57 @@ div.tocify {
 </div>
 
 
-<p>Each feature dataset is accompanied by an introductory chapter. You can browse the <a href="http://lingconlab.ru/dagatlas/features.html">Atlas</a> for some examples.</p>
-<p>It can be convenient to write a draft in a google doc in your feature folder, but ultimately the text will have to be formatted in <code>Rmarkdown</code>. You can download a template for formatting a chapter <a href="chapter_template/chapter_template.Rmd">here</a> and the cheat sheet <a href="chapter_template/chapter_cheatsheet.Rmd">here</a>.</p>
+<p>Each feature dataset is accompanied by an introductory chapter. You
+can browse the <a
+href="https://lingconlab.ru/tald/features.html">Atlas</a> for some
+examples.</p>
+<p>A draft of your chapter should be initially uploaded to your feature
+folder in a google doc, but ultimately the text will have to be
+formatted in <code>Rmarkdown</code>. You can download a template for
+formatting a chapter <a
+href="chapter_template/chapter_template.Rmd">here</a> and the cheat
+sheet <a href="chapter_template/chapter_cheatsheet.Rmd">here</a>.</p>
 <div id="structure-of-the-text" class="section level1">
 <h1>Structure of the text</h1>
-<p>Below is a list of recommended sections and points to address in the text.</p>
+<p>Below is a list of recommended sections and points to address in the
+text.</p>
 <div id="introduction" class="section level3">
 <h3>Introduction</h3>
 <ul>
 <li>Briefly explains what the feature is</li>
-<li>Gives a general characterization of how it is expressed in East Caucasian</li>
-<li>Gives a general characterization of how it is expressed cross-linguistically</li>
-<li>If applicable: describes how the classification in <a href="http://lingconlab.ru/dagatlas">TALD</a> differs from <a href="http://wals.info">WALS</a> (e.g. our chapter on the <a href="http://lingconlab.ru/dagatlas/standard_of_comparison.html">Standard of Comparison</a> shows more sub-types of spatial comparatives)</li>
-<li>Describes the goal of the text / map in one sentence: “Our goal is to classify the languages of Daghestan according to the type of spatial form used to mark the standard of comparison.”</li>
+<li>Gives a general characterization of how it is expressed in East
+Caucasian</li>
+<li>Gives a general characterization of how it is expressed
+cross-linguistically</li>
+<li>If applicable: describes how the classification in <a
+href="https://lingconlab.ru/tald">TALD</a> differs from <a
+href="http://wals.info">WALS</a> (e.g. our chapter on the <a
+href="https://lingconlab.ru/tald/002_standard_of_comparison.html">Standard
+of Comparison</a> shows more sub-types of spatial comparatives)</li>
+<li>Describes the goal of the text / map in one sentence: “Our goal is
+to classify the languages of Daghestan according to the type of spatial
+form used to mark the standard of comparison.”</li>
 </ul>
 </div>
 <div id="results" class="section level3">
 <h3>Results</h3>
 <ul>
-<li>Summarizes the different types/values you discovered; types identified in the text should correspond to values shown on the map. If you want to fuse multiple types into one category, be sure to explain this decision in the text.</li>
+<li>Summarizes the different types/values you discovered; types
+identified in the text should correspond to values shown on the map. If
+you want to fuse multiple types into one category, be sure to explain
+this decision in the text.</li>
 </ul>
 <blockquote>
 <p><strong>A hypothetical example:</strong><br />
-<a href="http://lingconlab.ru/dagatlas/standard_of_comparison.html">Comparative constructions</a> are usually based on spatial case forms, which consist of a localization and a directionality. Let’s say Chiara only cares about directionality, because differences in localization occur more rarely and do not show an interesting distribution. She can choose to create general categories based on directionality (e.g. essive and elative), and mention in her text that elative includes both super-elative and cont-elative forms.</p>
+<a
+href="https://lingconlab.ru/tald/002_standard_of_comparison.html">Comparative
+constructions</a> are usually based on spatial case forms, which consist
+of a localization and a directionality. Let’s say Chiara only cares
+about directionality, because differences in localization occur more
+rarely and do not show an interesting distribution. She can choose to
+create general categories based on directionality (e.g. essive and
+elative), and mention in her text that elative includes both
+super-elative and cont-elative forms.</p>
 </blockquote>
 <ul>
 <li>Provide examples</li>
@@ -410,23 +401,47 @@ div.tocify {
 <div id="distribution" class="section level3">
 <h3>Distribution</h3>
 <ul>
-<li>Does the distribution of different types show a genealogical and / or areal signal?</li>
+<li>Does the distribution of different types show a genealogical and /
+or areal signal?</li>
 </ul>
 </div>
 </div>
 <div id="literature-references" class="section level1">
 <h1>Literature references</h1>
-<p>For the chapter, you will have to compile your own list of references using this <a href="https://drive.google.com/file/d/17QIK00DNzD5OoKNnlPoICryb9Ochj1X1/view?usp=sharing">table template</a>.</p>
-<p>The references should be in <a href="https://en.wikipedia.org/wiki/BibTeX">bibtex</a> format. You can find a list of entry types and their arguments <a href="https://www.bibtex.com/e/entry-types/">here</a>. Our <a href="https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit?usp=sharing">literature database</a> is an example of a table of references in <a href="https://en.wikipedia.org/wiki/BibTeX">bibtex</a> format.</p>
-<p>When adding values to the <code>TITLE</code> and <code>BOOKTITLE</code> fields, you need to surround capital letters that are not at the beginning of the word with curly brackets, for example <code>Volume {IV}</code>. This is necessary so that such cases do not change to <code>Volume Iv</code> after rendering.</p>
-<p>In case you cite a source from our library in your chapter, all you have to do is copy the information from the <a href="https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit?usp=sharing">literature database</a> to your own table.</p>
-<p>When you are done, upload the table with references to your feature folder using the following filenaming convention: name of your feature *_bib*, e.g. <strong>standard_of_comparison_bib</strong>. Note that the column headers should be in uppercase.</p>
-<p>The table will be converted to a <code>.bib</code> file for the website automatically.</p>
+<p>For the chapter, you will have to compile your own list of references
+using this <a
+href="https://docs.google.com/spreadsheets/d/1DrNPxHFnCHaUAdFgPzdAhXMJ4nEzl0MvZsTcvcA03EY/edit?gid=0#gid=0">table
+template</a>. You can see an example of a completed list of references
+<a
+href="https://docs.google.com/spreadsheets/d/1e2WS1F9P0Eyp4et99JrH4PDxEQnHk1OcSzV6c3Vl6-I/edit#gid=883415171">here</a>.</p>
+<p>The references should be in <a
+href="https://en.wikipedia.org/wiki/BibTeX">bibtex</a> format. You can
+find a list of entry types and their arguments <a
+href="https://www.bibtex.com/e/entry-types/">here</a>. Our <a
+href="https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit?usp=sharing">literature
+database</a> is an example of a table of references in <a
+href="https://en.wikipedia.org/wiki/BibTeX">bibtex</a> format.</p>
+<p>In case you cite a source from our library in your chapter, all you
+have to do is copy the information from the <a
+href="https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit?usp=sharing">literature
+database</a> to your own table.</p>
+<p>When you are done, upload the table with references to your feature
+folder using the following filenaming convention: name of your feature
+*_bib*, e.g. <strong>standard_of_comparison_bib</strong>. Note that the
+column headers should be in uppercase.</p>
+<p>The table will be converted to a <code>.bib</code> file for the
+website automatically.</p>
 </div>
 <div id="pro-tip" class="section level1">
 <h1>Pro-tip</h1>
-<p>Avoid spending a lot of time on formatting examples and compiling lists of abbreviations and references in your google doc draft version. Ultimately you will have to format your text in <code>Rmarkdown</code>, which will do a lot of the more annoying work for you.</p>
-<p>Don’t be scared if you are not very experienced with R: all you need to format a chapter is <a href="https://www.r-project.org">R</a> + <a href="https://www.rstudio.com">RStudio</a> and our <a href="chapter_template/chapter_template.Rmd">chapter template</a>.</p>
+<p>Avoid spending a lot of time on formatting examples and compiling
+lists of abbreviations and references in your google doc draft version.
+Ultimately you will have to format your text in <code>Rmarkdown</code>,
+which will do a lot of the more annoying work for you.</p>
+<p>Don’t be scared if you are not very experienced with R: all you need
+to format a chapter is <a href="https://www.r-project.org">R</a> + <a
+href="https://www.rstudio.com">RStudio</a> and our <a
+href="chapter_template/chapter_template.Rmd">chapter template</a>.</p>
 </div>
 
 
@@ -440,7 +455,7 @@ div.tocify {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -458,7 +473,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
@@ -467,6 +482,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')
@@ -479,7 +497,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0

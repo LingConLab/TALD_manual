@@ -3,7 +3,7 @@
 <!-- - Briefly explains what the feature is -->
 <!-- - Gives a general characterization of how it is expressed in East Caucasian  -->
 <!-- - Gives a general characterization of how it is expressed cross-linguistically -->
-<!-- - If applicable: describes how the classification in [TALD](http://lingconlab.ru/dagatlas) differs from [WALS](http://wals.info) (e.g. our chapter on the [Standard of Comparison](http://lingconlab.ru/dagatlas/standard_of_comparison.html) shows more sub-types of spatial comparatives) -->
+<!-- - If applicable: describes how the classification in [TALD](https://lingconlab.ru/tald) differs from [WALS](http://wals.info) (e.g. our chapter on the [Standard of Comparison](http://lingconlab.ru/dagatlas/standard_of_comparison.html) shows more sub-types of spatial comparatives) -->
 <!-- - Describes the goal of the text / map in one sentence: "Our goal is to classify the languages of Daghestan according to the type of spatial form used to mark the standard of comparison." -->
 
 

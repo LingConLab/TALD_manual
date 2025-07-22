@@ -8,17 +8,14 @@ navbar:
       href: index.html
     - text: "How to start"
       href: steps.html
-    - text: "More"
-      icon: fa-info
-      menu:
-          - text: "Philosophy"
-            href: philosophy.html
-          - text: "Datasets"
-            href: datasets.html
-          - text: "Chapters"
-            href: chapters.html
-          - text: "Maps"
-            href: maps.html
+    - text: "Methods"
+      href: methods.html
+    - text: "Datasets"
+      href: datasets.html
+    - text: "Chapters"
+      href: chapters.html
+    - text: "Maps"
+      href: maps.html
 
   
 
