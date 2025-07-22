@@ -1,4 +1,3 @@
-
 ---
 title: "How to create a feature dataset"
 output:
@@ -19,10 +18,10 @@ Feature datasets for the Atlas are based on descriptive literature.
 
 To create a dataset you will need the following things:
 
-* Access to our [drive](https://drive.google.com/drive/folders/1qN3TpzX-wTxiX2ZX0ZNJ6SledqzLHE5W)
-* A [dataset template](https://docs.google.com/spreadsheets/d/1HCoEBiz8A2Vd9LUApRLtMANpnsUJN-k6EaXrBYfN0IU/edit#gid=0)
-* Our [library](https://drive.google.com/drive/folders/14RBA31Cj1MsFSiV4E_ZqTLGOhI1dUfMD) of descriptive sources
-* Our [literature database](https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit?usp=sharing) with bibliographical information about the sources in the library
+- Access to our [drive](https://drive.google.com/drive/folders/1qN3TpzX-wTxiX2ZX0ZNJ6SledqzLHE5W)
+- A [dataset template](https://docs.google.com/spreadsheets/d/1HCoEBiz8A2Vd9LUApRLtMANpnsUJN-k6EaXrBYfN0IU/edit#gid=0)
+- Our [library](https://drive.google.com/drive/folders/14RBA31Cj1MsFSiV4E_ZqTLGOhI1dUfMD) of descriptive sources
+- Our [literature database](https://docs.google.com/spreadsheets/d/1XmOaGjd3ri6uA6yKBNobEfRqkPnsO3ljy_DssM2JrqM/edit?usp=sharing) with bibliographical information about the sources in the library
 
 Start by creating a folder for your feature in the drive, and upload your dataset there, even if it is still a work in progress: this makes it easier to discuss any problems or questions you might have.
 
@@ -36,43 +35,43 @@ Some of the columns are **required** (without them, there may be problems with r
 
 Note: if you use an apostrophe (for example, in the name of a village (`Tad-Magitl'`) or in transcription), use [U+0027](https://en.wikipedia.org/wiki/%27_(disambiguation)) `'`. If you are working in Excel, when loading the table to the drive, make sure that the apostrophes remain correct.
 
-* **id** - unique number for each row = one observation in your dataset
-* **family** - language family
-* **group** - language branch/group
-* **lang** - language name
+- **id** - unique number for each row = one observation in your dataset
+- **family** - language family
+- **group** - language branch/group
+- **lang** - language name
 
-* **idiom** - the name of a language variety; descriptive sources provide information on specific dialects or village varieties of languages, and we aim to be as precise as possible about where our information comes from; this also means that if a source says: "in dialect X, the same form is used", you can add this as an observation to your dataset.
-* **type** - specifies whether the idiom is a village variety, a dialect spoken in multiple villages, or a standard language; please use our standard names and type classifications.
+- **idiom** - the name of a language variety; descriptive sources provide information on specific dialects or village varieties of languages, and we aim to be as precise as possible about where our information comes from; this also means that if a source says: "in dialect X, the same form is used", you can add this as an observation to your dataset.
+- **type** - specifies whether the idiom is a village variety, a dialect spoken in multiple villages, or a standard language; please use our standard names and type classifications.
 
 > You can search for the name and type of a certain idiom in [the East Caucasian villages dataset](https://raw.githubusercontent.com/LingConLab/TALD/refs/heads/master/data/tald_villages.csv). Sometimes the information on which idioms are described and where the data has been collected is given at the beginning of the source, so we recommend to search for this information there.
 
-* **genlang_point** - for our maps showing one datapoint per language we need to choose which datapoint (in case we have multiple points per language) is representative and will thus be showed on this map. For this purpose you need to set the appropriate row in this column to *yes* (no more than one per language), and set all other observations for the same language to *no*; see also [Methods - Current approach](philosophy.html#current_approach). The full list of languages can be found [here](https://lingconlab.ru/tald/languages.html).
-* **map** - in some cases there are multiple observations for one idiom (e.g. one frequent suffix and a more marginal one to express the same meaning). On the map we can show *only one value per datapoint*, so you can use this column to set information you want to see on the map to *yes* and everything else to *no*.
+- **genlang_point** - for our maps showing one datapoint per language we need to choose which datapoint (in case we have multiple points per language) is representative and will thus be showed on this map. For this purpose you need to set the appropriate row in this column to *yes* (no more than one per language), and set all other observations for the same language to *no*; see also [Methods - Current approach](philosophy.html#current_approach). The full list of languages can be found [here](https://lingconlab.ru/tald/languages.html).
+- **map** - in some cases there are multiple observations for one idiom (e.g. one frequent suffix and a more marginal one to express the same meaning). On the map we can show *only one value per datapoint*, so you can use this column to set information you want to see on the map to *yes* and everything else to *no*.
 
 > One value = one row in the dataset. If you have multiple values for one idiom, create two rows for this idiom, each with a unique id. The general rule of thumb for the **genlang_point** column is 1 "yes" per language, for **map** it is 1 "yes" per idiom.
 
-* **chapter** - the name of your chapter
-* **feature1** - the name of the feature: the chapter [Evidentiality in the tense system](https://lingconlab.ru/tald/evidentiality_tense_map.html), for example, has two features: *Evidentiality as a meaning of the perfect* and *Evidentiality in the tense system*. The name of each feature should be capitalized. The content of **feature1** will be used as a title for your map.
-* **value1** - the relevant values of a specific feature (e.g. attested / not attested). Try not to use too many values for the feature. The more values there are, the more difficult it is to perceive the final map.
+- **chapter** - the name of your chapter
+- **feature1** - the name of the feature: the chapter [Evidentiality in the tense system](https://lingconlab.ru/tald/evidentiality_tense_map.html), for example, has two features: *Evidentiality as a meaning of the perfect* and *Evidentiality in the tense system*. The name of each feature should be capitalized. The content of **feature1** will be used as a title for your map.
+- **value1** - the relevant values of a specific feature (e.g. attested / not attested). Try not to use too many values for the feature. The more values there are, the more difficult it is to perceive the final map.
 
 > Maps are generated based on the **value1** column. If you want to show the distribution of multiple parameters, please name further columns **value2**, **value3**, etc., and accordingly: **feature2**, **feature3**.
 
-* **source** - reference to the source you consulted (see [Literature references](#literature-references) below)
-* **page** - relevant page in the source
-* _**comment**_ - in this column you can "pour out your soul" in the words of G.A. Moroz: add any kind of thought on an observation or the source it appears in. Keep in mind, however, that anything you write here will be visible to users of the Atlas. So please write your comments in English, and make them clear and informative
+- **source** - reference to the source you consulted (see [Literature references](#literature-references) below)
+- **page** - relevant page in the source
+- _**comment**_ - in this column you can "pour out your soul" in the words of G.A. Moroz: add any kind of thought on an observation or the source it appears in. Keep in mind, however, that anything you write here will be visible to users of the Atlas. So please write your comments in English, and make them clear and informative
 
-* _**form**_ - what the phoneme / morpheme / construction / lexeme looks like in [Caucasiologist transcription](#transcription)
-* _**example_as_in_source**_ - original transcription of the example
-* _**example**_ - example of how the form is used (if applicable) in [Caucasiologist transcription](#transcription) with morpheme boundaries
-* _**translation_as_in_source**_ - original translation of the example
-* _**translation**_ - your own English translation of the example in case the source was in Russian or you dislike the original translation for some reason
-* _**gloss**_ - glosses for the example. Please follow the [Leipzig glossing rules](https://www.eva.mpg.de/lingua/pdf/Glossing-Rules.pdf) where possible. This includes unifying glosses from the original sources if necessary. Format the non-lexical glosses in CAPS.
-* _**example_source**_ - reference to the source of the example
-* _**example_page**_ - page reference for the example
-* _**example_comment**_ - any kind of comment you would like to add regarding the example
+- _**form**_ - what the phoneme / morpheme / construction / lexeme looks like in [Caucasiologist transcription](#transcription)
+- _**example_as_in_source**_ - original transcription of the example
+- _**example**_ - example of how the form is used (if applicable) in [Caucasiologist transcription](#transcription) with morpheme boundaries
+- _**translation_as_in_source**_ - original translation of the example
+- _**translation**_ - your own English translation of the example in case the source was in Russian or you dislike the original translation for some reason
+- _**gloss**_ - glosses for the example. Please follow the [Leipzig glossing rules](https://www.eva.mpg.de/lingua/pdf/Glossing-Rules.pdf) where possible. This includes unifying glosses from the original sources if necessary. Format the non-lexical glosses in CAPS.
+- _**example_source**_ - reference to the source of the example
+- _**example_page**_ - page reference for the example
+- _**example_comment**_ - any kind of comment you would like to add regarding the example
 
-* **contributor** - your name in English, so we know how to properly credit your work
-* **date** - the date on which you submitted your table; edits of the table after its first publication on the website will receive a new date stamp accordingly.
+- **contributor** - your name in English, so we know how to properly credit your work
+- **date** - the date on which you submitted your table; edits of the table after its first publication on the website will receive a new date stamp accordingly.
 
 # Literature references
 
@@ -124,13 +123,13 @@ Don't forget to upload a copy of the source to the appropriate folder in the  [l
 
 Some general principles for transcription:
 
-* we mostly follow IPA conventions but with a few notable exceptions: 
-  * ts = c, ʃ = š, tʃ = č,  tɬ, tɬ' = ƛ , ƛ', dʒ = ǯ ,  ʒ = ž
-  * nasalization is indicated with a tilde (~) above the vowel: aⁿ >	ã
-  * except diphtongs, because they would require double tildes, which looks pretty afwul: ũ̃̃o (in the source code these are two vowels with a tilde above it side-by-side)
-  * gemination as well as long vowels are indicated with a lengthmark ː (triangles, not dots): чч > čː for consonants, ō > oː for vowels
+- we mostly follow IPA conventions but with a few notable exceptions: 
+   - ts = c, ʃ = š, tʃ = č,  tɬ, tɬ' = ƛ , ƛ', dʒ = ǯ ,  ʒ = ž
+   - nasalization is indicated with a tilde (~) above the vowel: aⁿ >	ã
+   - except diphtongs, because they would require double tildes, which looks pretty afwul: ũ̃̃o (in the source code these are two vowels with a tilde above it side-by-side)
+   - gemination as well as long vowels are indicated with a lengthmark ː (triangles, not dots): чч > čː for consonants, ō > oː for vowels
   
-* [here](https://docs.google.com/spreadsheets/d/1KYV1yOettrVlsv2HFqpL_inoGCRmOyzmBoX10Ku4Oio/edit#gid=1009521071) is a table with all of the phonemes attested in the languages of our sample, transcribed in IPA (column **phoneme**); how to transcribe them for the atlas (column **TALD**), and how they are represented in different idioms and sources (all other columns). If you click on a column, you can view the bibtexkey of the source (in addition to the language and idiom). This also means that if you have the bibtexkey of a grammar, you can quickly find the corresponding phoneme and transcription.
+- [here](https://docs.google.com/spreadsheets/d/1KYV1yOettrVlsv2HFqpL_inoGCRmOyzmBoX10Ku4Oio/edit#gid=1009521071) is a table with all of the phonemes attested in the languages of our sample, transcribed in IPA (column **phoneme**); how to transcribe them for the atlas (column **TALD**), and how they are represented in different idioms and sources (all other columns). If you click on a column, you can view the bibtexkey of the source (in addition to the language and idiom). This also means that if you have the bibtexkey of a grammar, you can quickly find the corresponding phoneme and transcription.
 
 
 # Help
