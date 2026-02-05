@@ -13,7 +13,7 @@
 
 <title>How to create a feature dataset</title>
 
-<script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.30/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -377,20 +377,28 @@ href="https://en.wikipedia.org/wiki/%27_(disambiguation)">U+0027</a>
 <code>'</code>. If you are working in Excel, when loading the table to
 the drive, make sure that the apostrophes remain correct.</p>
 <ul>
-<li><p><strong>id</strong> - unique number for each row = one
-observation in your dataset</p></li>
-<li><p><strong>family</strong> - language family</p></li>
-<li><p><strong>group</strong> - language branch/group</p></li>
-<li><p><strong>lang</strong> - language name</p></li>
-<li><p><strong>idiom</strong> - the name of a language variety;
-descriptive sources provide information on specific dialects or village
-varieties of languages, and we aim to be as precise as possible about
-where our information comes from; this also means that if a source says:
-“in dialect X, the same form is used”, you can add this as an
-observation to your dataset.</p></li>
-<li><p><strong>type</strong> - specifies whether the idiom is a village
+<li><strong>id</strong> - unique number for each row = one observation
+in your dataset</li>
+<li><strong>family</strong> - language family (optional)</li>
+<li><strong>group</strong> - language branch/group (optional)</li>
+<li><strong>language</strong> - language name (see <a
+href="https://lingconlab.github.io/TALD/languages.html">the following
+page</a> and <a
+href="https://raw.githubusercontent.com/LingConLab/TALD/refs/heads/master/data/tald_villages.csv">this
+dataset</a> for the details)</li>
+<li><strong>idiom</strong> - the name of a language variety; descriptive
+sources provide information on specific dialects or village varieties of
+languages, and we aim to be as precise as possible about where our
+information comes from; this also means that if a source says: “in
+dialect X, the same form is used”, you can add this as an observation to
+your dataset. (see <a
+href="https://lingconlab.github.io/TALD/languages.html">the following
+page</a> and <a
+href="https://raw.githubusercontent.com/LingConLab/TALD/refs/heads/master/data/tald_villages.csv">this
+dataset</a> for the details)</li>
+<li><strong>type</strong> - specifies whether the idiom is a village
 variety, a dialect spoken in multiple villages, or a standard language;
-please use our standard names and type classifications.</p></li>
+please use our standard names and type classifications.</li>
 </ul>
 <blockquote>
 <p>You can search for the name and type of a certain idiom in <a

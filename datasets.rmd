@@ -36,11 +36,10 @@ Some of the columns are **required** (without them, there may be problems with r
 Note: if you use an apostrophe (for example, in the name of a village (`Tad-Magitl'`) or in transcription), use [U+0027](https://en.wikipedia.org/wiki/%27_(disambiguation)) `'`. If you are working in Excel, when loading the table to the drive, make sure that the apostrophes remain correct.
 
 - **id** - unique number for each row = one observation in your dataset
-- **family** - language family
-- **group** - language branch/group
-- **lang** - language name
-
-- **idiom** - the name of a language variety; descriptive sources provide information on specific dialects or village varieties of languages, and we aim to be as precise as possible about where our information comes from; this also means that if a source says: "in dialect X, the same form is used", you can add this as an observation to your dataset.
+- **family** - language family (optional)
+- **group** - language branch/group (optional)
+- **language** - language name (see [the following page](https://lingconlab.github.io/TALD/languages.html) and [this dataset](https://raw.githubusercontent.com/LingConLab/TALD/refs/heads/master/data/tald_villages.csv) for the details)
+- **idiom** - the name of a language variety; descriptive sources provide information on specific dialects or village varieties of languages, and we aim to be as precise as possible about where our information comes from; this also means that if a source says: "in dialect X, the same form is used", you can add this as an observation to your dataset. (see [the following page](https://lingconlab.github.io/TALD/languages.html) and [this dataset](https://raw.githubusercontent.com/LingConLab/TALD/refs/heads/master/data/tald_villages.csv) for the details)
 - **type** - specifies whether the idiom is a village variety, a dialect spoken in multiple villages, or a standard language; please use our standard names and type classifications.
 
 > You can search for the name and type of a certain idiom in [the East Caucasian villages dataset](https://raw.githubusercontent.com/LingConLab/TALD/refs/heads/master/data/tald_villages.csv). Sometimes the information on which idioms are described and where the data has been collected is given at the beginning of the source, so we recommend to search for this information there.
@@ -130,7 +129,6 @@ Some general principles for transcription:
    - gemination as well as long vowels are indicated with a lengthmark ː (triangles, not dots): чч > čː for consonants, ō > oː for vowels
   
 - [here](https://docs.google.com/spreadsheets/d/1KYV1yOettrVlsv2HFqpL_inoGCRmOyzmBoX10Ku4Oio/edit#gid=1009521071) is a table with all of the phonemes attested in the languages of our sample, transcribed in IPA (column **phoneme**); how to transcribe them for the atlas (column **TALD**), and how they are represented in different idioms and sources (all other columns). If you click on a column, you can view the bibtexkey of the source (in addition to the language and idiom). This also means that if you have the bibtexkey of a grammar, you can quickly find the corresponding phoneme and transcription.
-
 
 # Help
 
